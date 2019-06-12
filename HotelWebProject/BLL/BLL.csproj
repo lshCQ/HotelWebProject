@@ -41,7 +41,25 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DishesBLL.cs" />
+    <Compile Include="DishesBookBLL.cs" />
+    <Compile Include="DishesCategoryBLL.cs" />
+    <Compile Include="NewsBLL.cs" />
+    <Compile Include="NewsCategoryBLL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RecruitmentBLL.cs" />
+    <Compile Include="SuggestionBLL.cs" />
+    <Compile Include="SysAdminsBLL.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DAL\DAL.csproj">
+      <Project>{c6f6b04b-d3a6-476e-91ed-7f7b9dd5cb02}</Project>
+      <Name>DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Model\Models.csproj">
+      <Project>{b21ae773-4172-498b-954d-613f7d562a9c}</Project>
+      <Name>Models</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

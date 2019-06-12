@@ -172,3 +172,7 @@ D:\temp文件(桌面相关)\研发部\A.工作输出\2019-6月\2019-06-12 周三
 D:\temp文件(桌面相关)\研发部\A.工作输出\2019-6月\2019-06-12 周三 - 副本\2.工作输出\HotelWebProject\HotelWebProject\obj\Debug\HotelWebProject.csproj.CopyComplete
 D:\temp文件(桌面相关)\研发部\A.工作输出\2019-6月\2019-06-12 周三 - 副本\2.工作输出\HotelWebProject\HotelWebProject\obj\Debug\HotelWebProject.dll
 D:\temp文件(桌面相关)\研发部\A.工作输出\2019-6月\2019-06-12 周三 - 副本\2.工作输出\HotelWebProject\HotelWebProject\obj\Debug\HotelWebProject.pdb
+D:\temp文件(桌面相关)\研发部\A.工作输出\2019-6月\2019-06-12 周三 - 副本\2.工作输出\HotelWebProject\HotelWebProject\bin\BLL.dll
+D:\temp文件(桌面相关)\研发部\A.工作输出\2019-6月\2019-06-12 周三 - 副本\2.工作输出\HotelWebProject\HotelWebProject\bin\Models.dll
+D:\temp文件(桌面相关)\研发部\A.工作输出\2019-6月\2019-06-12 周三 - 副本\2.工作输出\HotelWebProject\HotelWebProject\bin\BLL.pdb
+D:\temp文件(桌面相关)\研发部\A.工作输出\2019-6月\2019-06-12 周三 - 副本\2.工作输出\HotelWebProject\HotelWebProject\bin\Models.pdb
