@@ -1,0 +1,6 @@
+F:\vs2017Code\HotelWebProject\HotelWebProject\BLL\bin\Debug\BLL.dll
+F:\vs2017Code\HotelWebProject\HotelWebProject\BLL\bin\Debug\BLL.pdb
+F:\vs2017Code\HotelWebProject\HotelWebProject\BLL\obj\Debug\BLL.csprojAssemblyReference.cache
+F:\vs2017Code\HotelWebProject\HotelWebProject\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+F:\vs2017Code\HotelWebProject\HotelWebProject\BLL\obj\Debug\BLL.dll
+F:\vs2017Code\HotelWebProject\HotelWebProject\BLL\obj\Debug\BLL.pdb

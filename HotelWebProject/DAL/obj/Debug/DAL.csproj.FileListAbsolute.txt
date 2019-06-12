@@ -1,0 +1,6 @@
+F:\vs2017Code\HotelWebProject\HotelWebProject\DAL\bin\Debug\DAL.dll
+F:\vs2017Code\HotelWebProject\HotelWebProject\DAL\bin\Debug\DAL.pdb
+F:\vs2017Code\HotelWebProject\HotelWebProject\DAL\obj\Debug\DAL.csprojAssemblyReference.cache
+F:\vs2017Code\HotelWebProject\HotelWebProject\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+F:\vs2017Code\HotelWebProject\HotelWebProject\DAL\obj\Debug\DAL.dll
+F:\vs2017Code\HotelWebProject\HotelWebProject\DAL\obj\Debug\DAL.pdb

@@ -127,6 +127,7 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\NewsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -141,8 +142,70 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Images\back.jpg" />
+    <Content Include="Images\bg.jpg" />
+    <Content Include="Images\dishes\100.PNG" />
+    <Content Include="Images\dishes\101.PNG" />
+    <Content Include="Images\dishes\102.PNG" />
+    <Content Include="Images\dishes\103.PNG" />
+    <Content Include="Images\dishes\104.PNG" />
+    <Content Include="Images\dishes\105.PNG" />
+    <Content Include="Images\dishes\106.PNG" />
+    <Content Include="Images\dishes\107.png" />
+    <Content Include="Images\dishes\caipin01.jpg" />
+    <Content Include="Images\dishes\caipin02.jpg" />
+    <Content Include="Images\dishes\caipin03.jpg" />
+    <Content Include="Images\dishes\caipin04.jpg" />
+    <Content Include="Images\dishes\caipin05.jpg" />
+    <Content Include="Images\dishes\caipin06.jpg" />
+    <Content Include="Images\dishes\caipin07.jpg" />
+    <Content Include="Images\dishes\caipin08.jpg" />
+    <Content Include="Images\environment\huanjing01.jpg" />
+    <Content Include="Images\environment\huanjing02.jpg" />
+    <Content Include="Images\environment\huanjing03.jpg" />
+    <Content Include="Images\environment\huanjing04.jpg" />
+    <Content Include="Images\environment\huanjing05.jpg" />
+    <Content Include="Images\environment\huanjing06.jpg" />
+    <Content Include="Images\error.jpg" />
+    <Content Include="Images\huanjing1.jpg" />
+    <Content Include="Images\huanjing2.jpg" />
+    <Content Include="Images\huanjing3.jpg" />
+    <Content Include="Images\huanjing4.jpg" />
+    <Content Include="Images\item.png" />
+    <Content Include="Images\joinus.jpg" />
+    <Content Include="Images\joinus\joinus.jpg" />
+    <Content Include="Images\leftimage1.jpg" />
+    <Content Include="Images\line.jpg" />
+    <Content Include="Images\listt.jpg" />
+    <Content Include="Images\navbg.jpg" />
+    <Content Include="Images\notfound.jpg" />
+    <Content Include="Images\othermaster\company.jpg" />
+    <Content Include="Images\othermaster\item.png" />
+    <Content Include="Images\othermaster\line.jpg" />
+    <Content Include="Images\othermaster\search5.gif" />
+    <Content Include="Images\othermaster\title1.jpg" />
+    <Content Include="Images\othermaster\title2.jpg" />
+    <Content Include="Images\othermaster\title5.jpg" />
+    <Content Include="Images\rec1.jpg" />
+    <Content Include="Images\rec2.jpg" />
+    <Content Include="Images\search5.gif" />
+    <Content Include="Images\title1.jpg" />
+    <Content Include="Images\title2.jpg" />
+    <Content Include="Images\title3.jpg" />
+    <Content Include="Images\title4.jpg" />
+    <Content Include="Images\title5.jpg" />
+    <Content Include="Images\topbg.jpg" />
+    <Content Include="Images\topflash1.jpg" />
+    <Content Include="Images\topflash2.jpg" />
+    <Content Include="Images\topflash3.jpg" />
+    <Content Include="Images\zhaopai1.jpg" />
+    <Content Include="Images\zhaopai2.jpg" />
+    <Content Include="Images\zhaopai3.jpg" />
+    <Content Include="Images\zhaopai4.jpg" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Images\environment\Thumbs.db" />
+    <Content Include="Images\othermaster\Thumbs.db" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
@@ -154,6 +217,16 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
+    <Content Include="Styles\Default.css" />
+    <Content Include="Styles\Dishes.css" />
+    <Content Include="Styles\Images\clogo.ico" />
+    <Content Include="Styles\Images\onloading.gif" />
+    <Content Include="Styles\Images\validatorError.png" />
+    <Content Include="Styles\Images\validatorValid.png" />
+    <Content Include="Styles\MainPage.css" />
+    <Content Include="Styles\MasterPage.css" />
+    <Content Include="Styles\News.css" />
+    <Content Include="Styles\Recruitment.css" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -162,12 +235,13 @@
       <DependentUpon>Web.config</DependentUpon>
     </Content>
     <Content Include="Views\Web.config" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\News\News.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Images\" />
     <Folder Include="Models\" />
-    <Folder Include="Styles\" />
     <Folder Include="ThirdFile\" />
   </ItemGroup>
   <ItemGroup>
