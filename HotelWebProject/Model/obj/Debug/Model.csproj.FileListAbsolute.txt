@@ -4,3 +4,9 @@ F:\vs2017Code\HotelWebProject\HotelWebProject\Model\obj\Debug\Model.csprojAssemb
 F:\vs2017Code\HotelWebProject\HotelWebProject\Model\obj\Debug\Model.csproj.CoreCompileInputs.cache
 F:\vs2017Code\HotelWebProject\HotelWebProject\Model\obj\Debug\Model.dll
 F:\vs2017Code\HotelWebProject\HotelWebProject\Model\obj\Debug\Model.pdb
+D:\temp文件(桌面相关)\研发部\A.工作输出\2019-6月\2019-06-12 周三 - 副本\2.工作输出\HotelWebProject\Model\bin\Debug\Model.dll
+D:\temp文件(桌面相关)\研发部\A.工作输出\2019-6月\2019-06-12 周三 - 副本\2.工作输出\HotelWebProject\Model\bin\Debug\Model.pdb
+D:\temp文件(桌面相关)\研发部\A.工作输出\2019-6月\2019-06-12 周三 - 副本\2.工作输出\HotelWebProject\Model\obj\Debug\Model.csprojAssemblyReference.cache
+D:\temp文件(桌面相关)\研发部\A.工作输出\2019-6月\2019-06-12 周三 - 副本\2.工作输出\HotelWebProject\Model\obj\Debug\Model.csproj.CoreCompileInputs.cache
+D:\temp文件(桌面相关)\研发部\A.工作输出\2019-6月\2019-06-12 周三 - 副本\2.工作输出\HotelWebProject\Model\obj\Debug\Model.dll
+D:\temp文件(桌面相关)\研发部\A.工作输出\2019-6月\2019-06-12 周三 - 副本\2.工作输出\HotelWebProject\Model\obj\Debug\Model.pdb
