@@ -1,0 +1,77 @@
+﻿@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>管理员登录</title>
+    <link href="~/WebHotelManage/Css/ManageLayout.css" rel="stylesheet" />
+</head>
+<body>
+    <form action="/SysAdmin/Login" class="adminlogin__form " method="post">
+        <div id="container">
+            <div id="top">
+                <h1 class="toptxt"><a href="/Home/Index">风味楼大酒店</a></h1>
+                <h1 class="Title">后台管理系统</h1>
+            </div>
+            <div id="content">
+                <div id="loginimg">
+                    <img src="~/WebHotelManage/Css/Images/loginimg.jpg" />
+                </div>
+                <div id="logindiv">
+                    <div id="ltitle">
+                        管理员登录
+                    </div>
+                    <div class="litem">
+                        登录账号：
+                        <input class="txt" id="LoginId" name="LoginId" type="text" value="" />
+                    </div>
+                    <div class="litem">
+                        登录密码：
+                        <input class="txt" id="LoginPwd" name="LoginPwd" type="password" value="" />
+                    </div>
+                    <div class="litem">
+                        <button class="btncss" id="btnlogin" type="submit">马上登录</button>
+                        <p style="color:red;">@TempData["LoginMsg"]</p>
+                    </div>
+
+                </div>
+                
+            </div>
+            <div id="footer">
+                <div id="bq">
+                    版权所有 Copyright(C)2010-2020 好运来酒店
+                </div>
+            </div>
+        </div>
+    </form>
+    <script src="~/Scripts/jquery-3.3.1.slim.min.js"></script>
+    <script>
+
+
+
+        $(function () {
+
+            $("#btnlogin").click(function () {
+                let id = $.trim($("#LoginId").val());
+                let pwd = $.trim($("#LoginPwd").val());
+                if (id == "" || id == null) {
+                    $("#LoginId").prop("placeholder", "登录账号不能为空!");
+                    return false;
+                } else if (pwd == "" || pwd == null) {
+                    $("#LoginPwd").prop("placeholder", "登录密码不能为空!");
+                    return false;
+                } else {
+                    return true;
+                }
+                
+            })
+
+
+
+
+        })
+    </script>
+</body>
+</html>

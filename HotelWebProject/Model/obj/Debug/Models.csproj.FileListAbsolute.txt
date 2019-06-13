@@ -5,7 +5,6 @@ D:\temp文件(桌面相关)\研发部\A.工作输出\2019-6月\2019-06-12 周三
 D:\temp文件(桌面相关)\研发部\A.工作输出\2019-6月\2019-06-12 周三 - 副本\2.工作输出\HotelWebProject\Model\obj\Debug\Models.pdb
 D:\temp文件(桌面相关)\研发部\A.工作输出\汇总\目前项目\酒店项目\HotelWebProject\Model\bin\Debug\Models.dll
 D:\temp文件(桌面相关)\研发部\A.工作输出\汇总\目前项目\酒店项目\HotelWebProject\Model\bin\Debug\Models.pdb
-D:\temp文件(桌面相关)\研发部\A.工作输出\汇总\目前项目\酒店项目\HotelWebProject\Model\obj\Debug\Models.csprojAssemblyReference.cache
 D:\temp文件(桌面相关)\研发部\A.工作输出\汇总\目前项目\酒店项目\HotelWebProject\Model\obj\Debug\Models.csproj.CoreCompileInputs.cache
 D:\temp文件(桌面相关)\研发部\A.工作输出\汇总\目前项目\酒店项目\HotelWebProject\Model\obj\Debug\Models.dll
 D:\temp文件(桌面相关)\研发部\A.工作输出\汇总\目前项目\酒店项目\HotelWebProject\Model\obj\Debug\Models.pdb

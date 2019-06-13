@@ -113,13 +113,21 @@
 	margin: 10px 0px 0px 25px;
 	display: inline;
 }
-.recimage
-{
-	width: 111px;
-	float: left;
-	border: 1px solid #FFFFFF;
-	margin-top: 8px;
-	display: inline;
+.recimage1 {
+    width: 111px;
+    float: left;
+    border: 1px solid #FFFFFF;
+    margin-top: 8px;
+    display: inline;
+}
+
+.recimage2 {
+    clear: left;
+    width: 111px;
+    float: left;
+    border: 1px solid #FFFFFF;
+    margin-top: 8px;
+    display: inline;
 }
 .rectext
 {

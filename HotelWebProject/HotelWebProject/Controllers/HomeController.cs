@@ -8,11 +8,12 @@ namespace HotelWebProject.Controllers
 {
     public class HomeController : Controller
     {
+        #region 主页
         public ActionResult Index()
         {
             return View();
         }
-
+        #endregion
         public ActionResult About()
         {
             ViewBag.Message = "Your application description page.";

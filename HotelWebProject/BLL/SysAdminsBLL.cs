@@ -11,15 +11,36 @@
 *└──────────────────────────────────────────────────────────────┘
 */
 
+using DAL;
+using Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Web;
 
 namespace BLL
 {
     public class SysAdminsBLL
     {
+        SysAdminsServices adminDal = new SysAdminsServices();
+
+        /// <summary>
+        /// 根据用户名和密码获取用户对象
+        /// </summary>
+        /// <param name="userid"></param>
+        /// <param name="userpwd"></param>
+        /// <returns></returns>
+        public SysAdmins GetAdmin(string userid, string userpwd)
+        {
+            SysAdmins adminObj = adminDal.GetAdmin(userid, userpwd);
+            if (adminObj != null)
+            {
+                HttpContext.Current.Session["user"] = adminObj;
+            }
+            return adminObj;
+        }
+
     }
 }
