@@ -19,3 +19,20 @@ D:\temp文件(桌面相关)\研发部\A.工作输出\2019-6月\2019-06-12 周三
 D:\temp文件(桌面相关)\研发部\A.工作输出\2019-6月\2019-06-12 周三 - 副本\2.工作输出\HotelWebProject\DAL\bin\Debug\EntityFramework.SqlServer.xml
 D:\temp文件(桌面相关)\研发部\A.工作输出\2019-6月\2019-06-12 周三 - 副本\2.工作输出\HotelWebProject\DAL\bin\Debug\zh-Hans\EntityFramework.resources.dll
 D:\temp文件(桌面相关)\研发部\A.工作输出\2019-6月\2019-06-12 周三 - 副本\2.工作输出\HotelWebProject\DAL\obj\Debug\DAL.csproj.CopyComplete
+D:\temp文件(桌面相关)\研发部\A.工作输出\汇总\目前项目\酒店项目\HotelWebProject\DAL\bin\Debug\DAL.dll.config
+D:\temp文件(桌面相关)\研发部\A.工作输出\汇总\目前项目\酒店项目\HotelWebProject\DAL\bin\Debug\DAL.dll
+D:\temp文件(桌面相关)\研发部\A.工作输出\汇总\目前项目\酒店项目\HotelWebProject\DAL\bin\Debug\DAL.pdb
+D:\temp文件(桌面相关)\研发部\A.工作输出\汇总\目前项目\酒店项目\HotelWebProject\DAL\bin\Debug\EntityFramework.dll
+D:\temp文件(桌面相关)\研发部\A.工作输出\汇总\目前项目\酒店项目\HotelWebProject\DAL\bin\Debug\EntityFramework.SqlServer.dll
+D:\temp文件(桌面相关)\研发部\A.工作输出\汇总\目前项目\酒店项目\HotelWebProject\DAL\bin\Debug\Models.dll
+D:\temp文件(桌面相关)\研发部\A.工作输出\汇总\目前项目\酒店项目\HotelWebProject\DAL\bin\Debug\Models.pdb
+D:\temp文件(桌面相关)\研发部\A.工作输出\汇总\目前项目\酒店项目\HotelWebProject\DAL\bin\Debug\EntityFramework.xml
+D:\temp文件(桌面相关)\研发部\A.工作输出\汇总\目前项目\酒店项目\HotelWebProject\DAL\bin\Debug\EntityFramework.SqlServer.xml
+D:\temp文件(桌面相关)\研发部\A.工作输出\汇总\目前项目\酒店项目\HotelWebProject\DAL\bin\Debug\zh-Hans\EntityFramework.resources.dll
+D:\temp文件(桌面相关)\研发部\A.工作输出\汇总\目前项目\酒店项目\HotelWebProject\DAL\obj\Debug\DAL.csprojAssemblyReference.cache
+D:\temp文件(桌面相关)\研发部\A.工作输出\汇总\目前项目\酒店项目\HotelWebProject\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+D:\temp文件(桌面相关)\研发部\A.工作输出\汇总\目前项目\酒店项目\HotelWebProject\DAL\obj\Debug\DAL.csproj.CopyComplete
+D:\temp文件(桌面相关)\研发部\A.工作输出\汇总\目前项目\酒店项目\HotelWebProject\DAL\obj\Debug\DAL.dll
+D:\temp文件(桌面相关)\研发部\A.工作输出\汇总\目前项目\酒店项目\HotelWebProject\DAL\obj\Debug\DAL.pdb
+D:\temp文件(桌面相关)\研发部\A.工作输出\汇总\目前项目\酒店项目\HotelWebProject\DAL\bin\Debug\log4net.dll
+D:\temp文件(桌面相关)\研发部\A.工作输出\汇总\目前项目\酒店项目\HotelWebProject\DAL\bin\Debug\log4net.xml
