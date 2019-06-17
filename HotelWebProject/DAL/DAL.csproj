@@ -54,6 +54,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="SQLHelper\EFHelper.cs" />
     <Compile Include="Services\DishesCategoryServices.cs" />
     <Compile Include="Services\NewsCategoryServices.cs" />
     <Compile Include="Services\NewsServices.cs" />

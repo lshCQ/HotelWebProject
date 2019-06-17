@@ -16,11 +16,14 @@ namespace DAL
 
     public partial class HotelDBEntities : DbContext
     {
-        public HotelDBEntities()
-            : base("name=HotelDBEntities")
+        //public HotelDBEntities()
+        //    : base("name=HotelDBEntities")
+        //{
+        //}
+        public HotelDBEntities()  
         {
+            base.Database.Connection.ConnectionString = System.Configuration.ConfigurationManager.ConnectionStrings["constr"].ConnectionString;
         }
-    
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             throw new UnintentionalCodeFirstException();
