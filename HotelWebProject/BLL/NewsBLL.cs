@@ -11,6 +11,8 @@
 *└──────────────────────────────────────────────────────────────┘
 */
 
+using DAL;
+using Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -21,5 +23,17 @@ namespace BLL
 {
     public class NewsBLL
     {
+        NewsServices ns = new NewsServices();
+
+        /// <summary>
+        /// 添加新闻
+        /// </summary>
+        /// <returns></returns>
+
+        public void AddNew(News news)
+        {
+            ns.PublishNew(news);
+        }
+
     }
 }

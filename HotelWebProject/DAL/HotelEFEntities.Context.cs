@@ -22,7 +22,7 @@ namespace DAL
         //}
         public HotelDBEntities()  
         {
-            base.Database.Connection.ConnectionString = System.Configuration.ConfigurationManager.ConnectionStrings["constr"].ConnectionString;
+            base.Database.Connection.ConnectionString = System.Configuration.ConfigurationManager.ConnectionStrings["conString"].ConnectionString;
         }
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
