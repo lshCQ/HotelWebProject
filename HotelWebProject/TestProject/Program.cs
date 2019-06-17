@@ -12,8 +12,8 @@ namespace TestProject
     {
         static void Main(string[] args)
         {
-            HotelDBEntities efdb = new HotelDBEntities();
-            DishesBook  dis = efdb.DishesBook.SingleOrDefault(s=>s.BookId== 10000);
+            //HotelDBEntities efdb = new HotelDBEntities();
+            //DishesBook  dis = efdb.DishesBook.SingleOrDefault(s=>s.BookId== 10000);
 
         }
     }

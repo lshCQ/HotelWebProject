@@ -34,5 +34,4 @@ D:\temp文件(桌面相关)\研发部\A.工作输出\汇总\目前项目\酒店�
 D:\temp文件(桌面相关)\研发部\A.工作输出\汇总\目前项目\酒店项目\HotelWebProject\DAL\obj\Debug\DAL.csproj.CopyComplete
 D:\temp文件(桌面相关)\研发部\A.工作输出\汇总\目前项目\酒店项目\HotelWebProject\DAL\obj\Debug\DAL.dll
 D:\temp文件(桌面相关)\研发部\A.工作输出\汇总\目前项目\酒店项目\HotelWebProject\DAL\obj\Debug\DAL.pdb
-D:\temp文件(桌面相关)\研发部\A.工作输出\汇总\目前项目\酒店项目\HotelWebProject\DAL\bin\Debug\log4net.xml
 D:\temp文件(桌面相关)\研发部\A.工作输出\汇总\目前项目\酒店项目\HotelWebProject\DAL\bin\Debug\zh-Hans\EntityFramework.SqlServer.resources.dll
