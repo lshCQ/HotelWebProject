@@ -11,9 +11,11 @@ namespace Models
 {
     using System;
     using System.Collections.Generic;
-    
+    using System.ComponentModel.DataAnnotations;
+
     public partial class SysAdmins
     {
+        [Key]
         public int LoginId { get; set; }
         public string LoginName { get; set; }
         public string LoginPwd { get; set; }

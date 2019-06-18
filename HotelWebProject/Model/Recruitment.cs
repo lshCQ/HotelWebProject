@@ -11,9 +11,11 @@ namespace Models
 {
     using System;
     using System.Collections.Generic;
-    
+    using System.ComponentModel.DataAnnotations;
+
     public partial class Recruitment
     {
+        [Key]
         public int PostId { get; set; }
         public string PostName { get; set; }
         public string PostType { get; set; }

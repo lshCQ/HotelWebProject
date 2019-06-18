@@ -11,9 +11,11 @@ namespace Models
 {
     using System;
     using System.Collections.Generic;
-    
+    using System.ComponentModel.DataAnnotations;
+
     public partial class DishesBook
     {
+        [Key]
         public int BookId { get; set; }
         public string HotelName { get; set; }
         public Nullable<System.DateTime> ConsumeTime { get; set; }

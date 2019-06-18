@@ -12,37 +12,81 @@ namespace TestProject
     {
         static void Main(string[] args)
         {
-<<<<<<< HEAD
+
+            /// <summary>
+            /// GetNewsCategory();测试
+            /// </summary>
+            /// <param name="news"></param>
+            /// <returns></returns>
             NewsBLL newbll = new NewsBLL();
-            var  catetory = newbll.GetNewsCategory();
-            foreach (var item in catetory)
+            //var catetory = newbll.GetNewsCategory();
+            //foreach (var item in catetory)
+            //{
+            //    Console.WriteLine(item.CategoryId + "\t" + item.CategoryName);
+            //}
+
+
+            /// <summary>
+            /// 添加测试
+            /// </summary>
+            /// <param name="news"></param>
+            /// <returns></returns>
+            //News news = new News();
+            //news.NewsTitle = "这是一个标题";
+            //news.NewsCategory= new NewsCategory { CategoryName = "社会新闻" };
+            //news.NewsContents = "这是内容内容！";
+
+            //newbll.PublishNew(news);
+
+
+            /// <summary>
+            /// 根据ID查询成功
+            /// </summary>
+            /// <param name="news"></param>
+            /// <returns></returns>
+            //var newsget=newbll.GetNewsById(1005);
+            //Console.WriteLine(newsget.NewsContents);
+
+            /// <summary>
+            /// 根据ID删除
+            /// </summary>
+            /// <param name="news"></param>
+            /// <returns></returns>
+            //Console.WriteLine(newbll.DeleteNew(1009));
+
+            /// <summary>
+            /// 修改(报错)
+            /// </summary>
+            /// <param name="news"></param>
+            /// <returns></returns>
+          //  News news = new News();
+          //  news.NewsId = 1005;
+          //  news.NewsTitle = "这是不是一个标题";
+          ////  NewsCategory NewsCategory = new NewsCategory { CategoryId = 2, CategoryName = "社会新闻" };
+          //  news.NewsContents = "这不是一个正经的内容内容！";
+          //  news.PublishTime = DateTime.Now;
+          //  news.CategoryId = 2;
+          // Console.WriteLine(newbll.ModifyNew(news));
+
+            /// <summary>
+            /// 查询指定前几条新闻列表
+            /// </summary>
+            /// <param name="news"></param>
+            /// <returns></returns>
+
+            var list = newbll.ModifyNew(5);
+            foreach (var item in list)
             {
-                Console.WriteLine( item.CategoryId+"\t"+item.CategoryName);
-            }
-            Console.ReadKey();
-=======
-            HotelDBEntities efdb = new HotelDBEntities();
-            //DishesBook  dis = efdb.DishesBook.SingleOrDefault(s=>s.BookId== 10000);
-
-            News news = new News();
-            news.NewsTitle = "这是一个标题";
-            news.NewsCategory= new NewsCategory { CategoryName = "社会新闻" };
-            news.NewsContents = "这是内容内容！";
-
-            EFHelper ef = new EFHelper(new HotelDBEntities());
-            ef.Add(news);
-
-
-            //使用方式一：查询单一结果
-            News stu1 = efdb.News.SingleOrDefault(s => s.NewsTitle == "这是一个标题");//数据库查询结构为空，该方法返回null;数据库查询结果多个，会报错
-            if (stu1 != null)
-            {
-                Console.WriteLine("内容：{0}，id：{1}", stu1.NewsContents, stu1.NewsId);
+                Console.WriteLine(item.NewsId);
+                Console.WriteLine(item.NewsTitle);
+                Console.WriteLine(item.NewsContents);
+                Console.WriteLine(item.CategoryId);
             }
 
-            Console.ReadKey();
+            //Console.WriteLine(newbll.GetCategoryName(2).CategoryName);
 
->>>>>>> 4ed62af57f5357ba087f77555c542c4bf12f4d4c
+
+            Console.ReadKey();
         }
     }
 }

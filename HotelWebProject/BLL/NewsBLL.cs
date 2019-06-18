@@ -18,14 +18,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using DAL;
-using Models;
+
 
 namespace BLL
 {
     public class NewsBLL
     {
-<<<<<<< HEAD
+//<<<<<<< HEAD
         private NewsServices newsdll = new NewsServices();
 
         /// <summary>
