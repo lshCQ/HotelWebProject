@@ -11,6 +11,8 @@
 *└──────────────────────────────────────────────────────────────┘
 */
 
+using DAL;
+using Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -23,6 +25,7 @@ namespace BLL
 {
     public class NewsBLL
     {
+<<<<<<< HEAD
         private NewsServices newsdll = new NewsServices();
 
         /// <summary>
@@ -91,6 +94,7 @@ namespace BLL
         {
                 return newsdll.GetCategoryName(categoryid);
         }
+
 
 
 

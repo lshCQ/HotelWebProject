@@ -51,6 +51,7 @@ namespace DAL
             //{
             //    return efdb.Database.ExecuteSqlCommand("excute usp_AddNews @NewsTitle", sqlpar);
             //}
+
             //使用EFHelper
             return helper.Add(news);
         }
