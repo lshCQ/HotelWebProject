@@ -16,10 +16,83 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using DAL;
+using Models;
 
 namespace BLL
 {
     public class NewsBLL
     {
+        private NewsServices newsdll = new NewsServices();
+
+        /// <summary>
+        /// 发布新闻   在News表添加一条记录
+        /// </summary>
+        /// <param name="news"></param>
+        /// <returns></returns>
+        public int PublishNew(News news)
+        {
+            return newsdll.PublishNew(news);
+        }
+        /// <summary>
+        /// 删除新闻   在News表删除一条记录
+        /// </summary>
+        /// <param name="news"></param>
+        /// <returns></returns>
+        public int DeleteNew(int newsid)
+        {
+            return newsdll.DeleteNew(newsid);
+        }
+
+        /// <summary>
+        /// 修改新闻   在News表修改一条记录
+        /// </summary>
+        /// <param name="news"></param>
+        /// <returns></returns>
+        public int ModifyNew(News news)
+        {
+            return newsdll.ModifyNew(news);
+        }
+
+        /// <summary>
+        /// 查询指定前几条新闻列表
+        /// </summary>
+        /// <param name="news"></param>
+        /// <returns></returns>
+        public List<News> ModifyNew(int count)
+        {
+                return newsdll.ModifyNew(count); 
+        }
+
+        /// <summary>
+        /// 根据Id获取新闻信息
+        /// </summary>
+        /// <param name="newsId"></param>
+        /// <returns></returns>
+        public News GetNewsById(int newsId)
+        {         
+                return newsdll.GetNewsById(newsId);   
+        }
+
+        /// <summary>
+        /// 获取新闻分类
+        /// </summary>
+        /// <returns></returns>
+        public List<NewsCategory> GetNewsCategory()
+        {
+            return newsdll.GetNewsCategory(); 
+        }
+
+        /// <summary>
+        /// 根据Id获取分类名称
+        /// </summary>
+        /// <returns></returns>
+        public NewsCategory GetCategoryName(int categoryid)
+        {
+                return newsdll.GetCategoryName(categoryid);
+        }
+
+
+
     }
 }

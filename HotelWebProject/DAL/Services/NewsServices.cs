@@ -18,7 +18,7 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
- 
+
 
 namespace DAL
 {
@@ -52,10 +52,10 @@ namespace DAL
             //    return efdb.Database.ExecuteSqlCommand("excute usp_AddNews @NewsTitle", sqlpar);
             //}
             //使用EFHelper
-                return helper.Add(news);
+            return helper.Add(news);
         }
 
-       
+
 
 
         /// <summary>
@@ -89,7 +89,7 @@ namespace DAL
         {
             using (HotelDBEntities efdb = new HotelDBEntities())
             {
-              return  (from n in efdb.News orderby n.PublishTime descending select n).Take(count).ToList();
+                return (from n in efdb.News orderby n.PublishTime descending select n).Take(count).ToList();
             }
         }
 
@@ -103,6 +103,30 @@ namespace DAL
             using (HotelDBEntities efdb = new HotelDBEntities())
             {
                 return (from n in efdb.News where newsId == n.NewsId select n).FirstOrDefault();
+            }
+        }
+
+        /// <summary>
+        /// 获取新闻分类
+        /// </summary>
+        /// <returns></returns>
+        public List<NewsCategory> GetNewsCategory()
+        {
+            using (HotelDBEntities efdb = new HotelDBEntities())
+            {
+                return (from n in efdb.NewsCategory select n).ToList<NewsCategory>();
+            }
+        }
+
+        /// <summary>
+        /// 根据Id获取分类名称
+        /// </summary>
+        /// <returns></returns>
+        public  NewsCategory GetCategoryName(int categoryid)
+        {
+            using (HotelDBEntities efdb = new HotelDBEntities())
+            {
+                return (from n in efdb.NewsCategory where n.CategoryId==categoryid  select n).FirstOrDefault();
             }
         }
 

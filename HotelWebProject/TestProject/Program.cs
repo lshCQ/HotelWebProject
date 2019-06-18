@@ -5,16 +5,20 @@ using System.Text;
 using System.Threading.Tasks;
 using DAL;
 using Models;
-
+using BLL;
 namespace TestProject
 {
     class Program
     {
         static void Main(string[] args)
         {
-            //HotelDBEntities efdb = new HotelDBEntities();
-            //DishesBook  dis = efdb.DishesBook.SingleOrDefault(s=>s.BookId== 10000);
-
+            NewsBLL newbll = new NewsBLL();
+            var  catetory = newbll.GetNewsCategory();
+            foreach (var item in catetory)
+            {
+                Console.WriteLine( item.CategoryId+"\t"+item.CategoryName);
+            }
+            Console.ReadKey();
         }
     }
 }

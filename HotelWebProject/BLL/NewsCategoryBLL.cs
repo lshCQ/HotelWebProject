@@ -21,5 +21,7 @@ namespace BLL
 {
     public class NewsCategoryBLL
     {
+
+
     }
 }
