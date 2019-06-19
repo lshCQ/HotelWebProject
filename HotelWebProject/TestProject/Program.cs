@@ -12,37 +12,24 @@ namespace TestProject
     {
         static void Main(string[] args)
         {
-<<<<<<< HEAD
+
             NewsBLL newbll = new NewsBLL();
-            var  catetory = newbll.GetNewsCategory();
-            foreach (var item in catetory)
-            {
-                Console.WriteLine( item.CategoryId+"\t"+item.CategoryName);
-            }
-            Console.ReadKey();
-=======
-            HotelDBEntities efdb = new HotelDBEntities();
-            //DishesBook  dis = efdb.DishesBook.SingleOrDefault(s=>s.BookId== 10000);
-
+            //var  catetory = newbll.GetNewsCategory();
+            //foreach (var item in catetory)
+            //{
+            //    Console.WriteLine( item.CategoryId+"\t"+item.CategoryName);
+            //}
+            //Console.ReadKey();
+            //NewsCategory.CategoryId
             News news = new News();
-            news.NewsTitle = "这是一个标题";
-            news.NewsCategory= new NewsCategory { CategoryName = "社会新闻" };
-            news.NewsContents = "这是内容内容！";
+            news.NewsTitle = "这是不是一个标题";
+            news.NewsCategory = new NewsCategory {   CategoryId =3 , CategoryName = "社会新闻" };
+            news.NewsContents = "这不是一个正经的内容内容！";
+            news.NewsId = 1000;
+            news.CategoryId = 3;
+            newbll.ModifyNew(news);
 
-            EFHelper ef = new EFHelper(new HotelDBEntities());
-            ef.Add(news);
 
-
-            //使用方式一：查询单一结果
-            News stu1 = efdb.News.SingleOrDefault(s => s.NewsTitle == "这是一个标题");//数据库查询结构为空，该方法返回null;数据库查询结果多个，会报错
-            if (stu1 != null)
-            {
-                Console.WriteLine("内容：{0}，id：{1}", stu1.NewsContents, stu1.NewsId);
-            }
-
-            Console.ReadKey();
-
->>>>>>> 4ed62af57f5357ba087f77555c542c4bf12f4d4c
         }
     }
 }

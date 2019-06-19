@@ -216,6 +216,7 @@
     <Content Include="Scripts\uploadPreview.js" />
     <Content Include="Scripts\validation-min.js" />
     <Content Include="Scripts\validation.js" />
+    <Content Include="Views\Company\Index.html" />
     <Content Include="WebHotelManage\Css\Images\back.jpg" />
     <Content Include="WebHotelManage\Css\Images\default.png" />
     <Content Include="WebHotelManage\Css\Images\loginimg.jpg" />
@@ -486,6 +487,7 @@
     <Content Include="Views\Company\RecruitmentPublish.cshtml" />
     <Content Include="Views\Company\RecruitmentUpdate.cshtml" />
     <Content Include="Views\Company\SuggestionManager.cshtml" />
+    <Content Include="Views\Company\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

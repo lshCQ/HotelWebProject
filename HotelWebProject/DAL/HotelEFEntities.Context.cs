@@ -20,9 +20,9 @@ namespace DAL
         //    : base("name=HotelDBEntities")
         //{
         //}
-        public HotelDBEntities()  
+        public HotelDBEntities()  :base("HotelDBEntities")
         {
-            base.Database.Connection.ConnectionString = System.Configuration.ConfigurationManager.ConnectionStrings["conString"].ConnectionString;
+           // base.Database.Connection.ConnectionString = System.Configuration.ConfigurationManager.ConnectionStrings["conString"].ConnectionString;
         }
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {

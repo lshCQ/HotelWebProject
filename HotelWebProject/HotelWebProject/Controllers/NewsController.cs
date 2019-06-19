@@ -78,7 +78,7 @@ namespace HotelWebProject.Controllers
                 return RedirectToAction("NewsPublish");
             }
 
-            nb.AddNew(news);
+         //   nb.AddNew(news);
 
             return RedirectToAction("NewsList", "News");
         }

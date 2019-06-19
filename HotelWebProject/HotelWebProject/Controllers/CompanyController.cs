@@ -8,6 +8,11 @@ namespace HotelWebProject.Controllers
 {
     public class CompanyController : Controller
     {
+        public ActionResult Index()
+        {
+            return View();
+        }
+
         #region 页面
 
         #region 前台页面

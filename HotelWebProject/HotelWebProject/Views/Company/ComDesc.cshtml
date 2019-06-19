@@ -42,7 +42,8 @@
         <div id="nav">
             <div id="navlink">
                 <ul>
-                    <li><a href="/">网站首页</a></li>
+                    @*<li><a href="/">网站首页</a></li>*@
+                    <li>@Html.ActionLink("网站首页","Index","Company")</li>
                     <li><a href="/Company/ComDesc">公司介绍</a></li>
                     <li><a href="/News/NewsList">新闻动态</a></li>
                     <li><a href="/Dishes/DishesShow">美食展示</a></li>
