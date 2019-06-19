@@ -23,6 +23,82 @@ namespace BLL
 {
     public class DishesBLL
     {
-        
+        private DishesServices dishess = new DishesServices();
+        /// <summary>
+        /// 发布菜品
+        /// </summary>
+        /// <param name="dishes"></param>
+        /// <returns></returns>
+        public int AddDishes(Dishes dishes)
+        {
+
+            return dishess.AddDishes(dishes);
+        }
+
+        /// <summary>
+        /// 修改菜品
+        /// </summary>
+        /// <param name="dishes"></param>
+        /// <returns></returns>
+        public int ModifyDishes(Dishes dishes)
+        {
+
+            return dishess.ModityDishes(dishes);
+        }
+
+        /// <summary>
+        /// 删除菜品
+        /// </summary>
+        /// <param name="dishesId"></param>
+        /// <returns></returns>
+        public int DeleteDishes(int dishesId)
+        {
+            return dishess.DeleteDishes(dishesId);
+        }
+        /// <summary>
+        /// 获取菜品， 可获取全部和根据查询条件获取
+        /// </summary>
+        /// <param name="dishesId"></param>
+        /// <returns></returns>
+        public List<Dishes> GetAllDishes(int categoryId)
+        {
+            return dishess.GetAllDishes(categoryId);
+        }
+
+
+        /// <summary>
+        /// 获取菜单分类 （下拉框使用）
+        /// </summary>
+        ///
+        /// <returns></returns>
+        public List<DishesCategory> GetAllDishesCategory()
+        {           
+                return dishess.GetAllDishesCategory();           
+        }
+
+
+        /// <summary>
+        /// 根据菜品Id查询菜品名称
+        /// </summary>
+        /// <param name="categoryId"></param>
+        /// <returns></returns>
+        public DishesCategory GetDishesCategoryName(int categoryId)
+        {
+            
+                return dishess.GetDishesCategoryName(categoryId); 
+            
+        }
+
+        /// <summary>
+        /// 根据菜品Id获的菜品  修改使用
+        /// </summary>
+        /// <param name="categoryId"></param>
+        /// <returns></returns>
+        public Dishes GetDishesById(int dishesId)
+        {
+            return dishess.GetDishesById(dishesId);
+        }
+
+
     }
 }

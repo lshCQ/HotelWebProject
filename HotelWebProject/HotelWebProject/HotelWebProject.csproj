@@ -216,7 +216,6 @@
     <Content Include="Scripts\uploadPreview.js" />
     <Content Include="Scripts\validation-min.js" />
     <Content Include="Scripts\validation.js" />
-    <Content Include="Views\Company\Index.html" />
     <Content Include="WebHotelManage\Css\Images\back.jpg" />
     <Content Include="WebHotelManage\Css\Images\default.png" />
     <Content Include="WebHotelManage\Css\Images\loginimg.jpg" />
@@ -510,10 +509,12 @@
     <ProjectReference Include="..\BLL\BLL.csproj">
       <Project>{c84813da-5239-4fd5-a06d-f9c4087a0886}</Project>
       <Name>BLL</Name>
+      <Private>True</Private>
     </ProjectReference>
     <ProjectReference Include="..\DAL\DAL.csproj">
       <Project>{c6f6b04b-d3a6-476e-91ed-7f7b9dd5cb02}</Project>
       <Name>DAL</Name>
+      <Private>True</Private>
     </ProjectReference>
     <ProjectReference Include="..\Model\Models.csproj">
       <Project>{b21ae773-4172-498b-954d-613f7d562a9c}</Project>

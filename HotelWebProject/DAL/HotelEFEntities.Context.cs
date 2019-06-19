@@ -22,20 +22,21 @@ namespace DAL
         //    : base("name=HotelDBEntities")
         //{
         //}
-<<<<<<< HEAD
+//<<<<<<< HEAD
         public HotelDBEntities()  :base("HotelDBEntities")
         {
            // base.Database.Connection.ConnectionString = System.Configuration.ConfigurationManager.ConnectionStrings["conString"].ConnectionString;
         }
-        protected override void OnModelCreating(DbModelBuilder modelBuilder)
-        {
-            throw new UnintentionalCodeFirstException();
-=======
-        public HotelDBEntities() :base("HotelDBEntities")
-        {
-            //base.Database.Connection.ConnectionString = System.Configuration.ConfigurationManager.ConnectionStrings["conString"].ConnectionString;
->>>>>>> fa72679c74b1186f466bfb3aa556a232df600e49
-        }
+        //protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        //{
+        //    throw new UnintentionalCodeFirstException();
+        //}
+//=======
+//        public HotelDBEntities() :base("HotelDBEntities")
+//        {
+//            //base.Database.Connection.ConnectionString = System.Configuration.ConfigurationManager.ConnectionStrings["conString"].ConnectionString;
+////>>>>>>> fa72679c74b1186f466bfb3aa556a232df600e49
+//        }
         //protected override void OnModelCreating(DbModelBuilder modelBuilder)
         //{
         //    throw new UnintentionalCodeFirstException();

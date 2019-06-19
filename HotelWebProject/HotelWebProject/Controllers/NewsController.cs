@@ -107,11 +107,11 @@ namespace HotelWebProject.Controllers
                 return RedirectToAction("NewsPublish");
             }
 
-<<<<<<< HEAD
+//<<<<<<< HEAD
          //   nb.AddNew(news);
-=======
+//=======
             nb.PublishNew(news);
->>>>>>> fa72679c74b1186f466bfb3aa556a232df600e49
+//>>>>>>> fa72679c74b1186f466bfb3aa556a232df600e49
 
             return RedirectToAction("NewsManager", "News");
         }
