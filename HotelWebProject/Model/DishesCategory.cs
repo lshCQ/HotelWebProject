@@ -11,7 +11,8 @@ namespace Models
 {
     using System;
     using System.Collections.Generic;
-    
+    using System.ComponentModel.DataAnnotations;
+
     public partial class DishesCategory
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
@@ -20,6 +21,7 @@ namespace Models
             this.Dishes = new HashSet<Dishes>();
         }
     
+        [Key]
         public int CategoryId { get; set; }
         public string CategoryName { get; set; }
     

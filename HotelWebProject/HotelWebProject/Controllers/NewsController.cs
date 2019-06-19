@@ -1,5 +1,6 @@
 ﻿using BLL;
 using Models;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -19,8 +20,12 @@ namespace HotelWebProject.Controllers
         }
         public ActionResult NewsList()
         {
+
             return View();
         }
+
+        
+
         #endregion
         #region 后台页面
         public ActionResult NewsPublish()
@@ -42,6 +47,29 @@ namespace HotelWebProject.Controllers
 
 
         #region 方法，后台
+
+        /// <summary>
+        /// 查询所有信息
+        /// </summary>
+        /// <returns></returns>
+        [HttpPost]
+        public string GetAllNews() {
+
+            var rt=nb.ModifyNew(5);
+            string json = JsonConvert.SerializeObject(rt);
+            return json;
+        }
+        /// <summary>
+        /// 删除新闻信息
+        /// </summary>
+        /// <returns></returns>
+        public ActionResult DeleteNews()
+        {
+            int count= Convert.ToInt32(Request["newsId"]);
+            nb.DeleteNew(count);
+            return RedirectToAction("NewsManager", "News");
+        }
+
         /// <summary>
         /// 添加新闻信息
         /// </summary>
@@ -52,21 +80,22 @@ namespace HotelWebProject.Controllers
             News news = new News();
             //获取用户请求信息
             news.NewsTitle = Request["NewsTitle"];
-            news.NewsCategory = new NewsCategory { CategoryName = Request["CategoryId"]}; //(NewsCategory)Convert.ChangeType(Request["CategoryId"], typeof(NewsCategory)); 
+            news.CategoryId = Convert.ToInt32(Request["CategoryId"]);
             news.NewsContents = Request["NewsContents"];
+            news.PublishTime = DateTime.Now;
             //反馈消息
             string message = string.Empty;
-            if (string.IsNullOrEmpty(news.NewsTitle) )
+            if (string.IsNullOrEmpty(news.NewsTitle))
             {
-                    message = "新闻标题不能为空";
+                message = "新闻标题不能为空";
             }
-            else if (string.IsNullOrEmpty(news.NewsCategory.ToString()))
+            else if (string.IsNullOrEmpty((news.CategoryId).ToString()))
             {
-                    message = "请选择新闻类型";
+                message = "请选择新闻类型";
             }
             else if (string.IsNullOrEmpty(news.NewsContents))
             {
-                    message = "新闻内容不能为空";
+                message = "新闻内容不能为空";
             }
             else
             {
@@ -78,9 +107,13 @@ namespace HotelWebProject.Controllers
                 return RedirectToAction("NewsPublish");
             }
 
+<<<<<<< HEAD
          //   nb.AddNew(news);
+=======
+            nb.PublishNew(news);
+>>>>>>> fa72679c74b1186f466bfb3aa556a232df600e49
 
-            return RedirectToAction("NewsList", "News");
+            return RedirectToAction("NewsManager", "News");
         }
 
 

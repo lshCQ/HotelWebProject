@@ -10,6 +10,8 @@
 namespace DAL
 {
     using System;
+    using System.ComponentModel.DataAnnotations;
+    using System.ComponentModel.DataAnnotations.Schema;
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     using Models;
@@ -20,6 +22,7 @@ namespace DAL
         //    : base("name=HotelDBEntities")
         //{
         //}
+<<<<<<< HEAD
         public HotelDBEntities()  :base("HotelDBEntities")
         {
            // base.Database.Connection.ConnectionString = System.Configuration.ConfigurationManager.ConnectionStrings["conString"].ConnectionString;
@@ -27,9 +30,20 @@ namespace DAL
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             throw new UnintentionalCodeFirstException();
+=======
+        public HotelDBEntities() :base("HotelDBEntities")
+        {
+            //base.Database.Connection.ConnectionString = System.Configuration.ConfigurationManager.ConnectionStrings["conString"].ConnectionString;
+>>>>>>> fa72679c74b1186f466bfb3aa556a232df600e49
         }
+        //protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        //{
+        //    throw new UnintentionalCodeFirstException();
+        //}
     
         public virtual DbSet<Dishes> Dishes { get; set; }
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        [Key]
         public virtual DbSet<DishesBook> DishesBook { get; set; }
         public virtual DbSet<DishesCategory> DishesCategory { get; set; }
         public virtual DbSet<News> News { get; set; }
