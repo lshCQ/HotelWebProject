@@ -3,15 +3,23 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
-
+using BLL;
+using Models;
 namespace HotelWebProject.Controllers
 {
     public class CompanyController : Controller
     {
+        NewsBLL news = new NewsBLL();
         public ActionResult Index()
         {
+            //获得前五条新闻
+          var  newslist =  news.GetNewsByCount(5);
+            ViewBag.newslist = newslist;
             return View();
         }
+
+  
+        
 
         #region 页面
 

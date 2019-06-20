@@ -1,0 +1,29 @@
+对于所用到的HtmlHelper
+
+在Asp.netmvc 中并没有像asp.net那样的服务端控件的开发方式，毕竟微软的mvc就是传统的请求的处理 响应的回归。
+ 但是如果手写Html标签效率比较低，可重用度比较低，这是我们就可以通过微软给我们提供的前端页面帮助类HtmlHelper的辅助类，来帮助我们快速开发前台页面，也可以提供拓展接口，前台页面标签得到了高度可重用。
+ 
+ 
+ 我们这个项目中，所使用到的第一个标签是 Html.ActionLink(“超链接名称”,"方法名称","控制器名称")
+ 
+ 解释；使用----》html页面
+ 
+ Html.ActionLink("这是一个连接", "Index", "Home")----><a href="/Home/Index">这是一个连接</a>
+带有QueryString的写法
+Html.ActionLink("这是一个连接", "Index", "Home", new { page=1 },null)----》<a href="/Home/Index?page=1">这是一个连接</a>
+Html.ActionLink("这是一个连接", "Index", new { page=1 })----》<a href="/Home/Index?page=1">这是一个连接</a>
+有其它Html属性的写法
+Html.ActionLink("这是一个连接", "Index", "Home", null,new { id="link1" })----》<a href="/Home/Index" id=link1>这是一个连接</a>
+Html.ActionLink("这是一个连接", "Index", null,new { id="link1" })----》<a href="/Home/Index" id=link1>这是一个连接</a>
+QueryString与Html属性同时存在
+Html.ActionLink("这是一个连接", "Index", "Home", new { page = 1 }, new { id = "link1" })----》<a href="/Home/Index?page=1">这是一个连接</a>
+
+ViewBag
+
+
+RenderSection(内容页名称，required):
+作用：用于呈现指定“块，区域，部分”内容，和Aspx视图中的ContentPlaceHolder作用类似 ，可以在母版页面中任意一个位置定义一个容器 ，然后在内容页描述，这样内容页的相关内容呈现在母版页面中位置就更加灵活
+
+参数：内容页名称：自定义  required 该部分不是必须，因为是重载方法可以不写
+RenderSection可以在布局页面多次出现这点不同于RenderBody
+

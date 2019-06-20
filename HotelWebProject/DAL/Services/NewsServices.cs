@@ -86,7 +86,7 @@ namespace DAL
         /// </summary>
         /// <param name="news"></param>
         /// <returns></returns>
-        public List<News> ModifyNew(int count)
+        public List<News> GetNewsByCount(int count)
         {
             using (HotelDBEntities efdb = new HotelDBEntities())
             {

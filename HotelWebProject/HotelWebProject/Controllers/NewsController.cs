@@ -55,7 +55,7 @@ namespace HotelWebProject.Controllers
         [HttpPost]
         public string GetAllNews() {
 
-            var rt=nb.ModifyNew(5);
+            var rt=nb.GetNewsByCount(5);
             string json = JsonConvert.SerializeObject(rt);
             return json;
         }
@@ -106,13 +106,7 @@ namespace HotelWebProject.Controllers
                 TempData["LoginMsg"] = message;
                 return RedirectToAction("NewsPublish");
             }
-
-<<<<<<< HEAD
-         //   nb.AddNew(news);
-=======
             nb.PublishNew(news);
->>>>>>> fa72679c74b1186f466bfb3aa556a232df600e49
-
             return RedirectToAction("NewsManager", "News");
         }
 

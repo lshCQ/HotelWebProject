@@ -12,7 +12,7 @@ namespace TestProject
     {
         static void Main(string[] args)
         {
-<<<<<<< HEAD
+ 
 
             NewsBLL newbll = new NewsBLL();
             //var  catetory = newbll.GetNewsCategory();
@@ -31,14 +31,14 @@ namespace TestProject
             newbll.ModifyNew(news);
 
 
-=======
+ 
 
             /// <summary>
             /// GetNewsCategory();测试
             /// </summary>
             /// <param name="news"></param>
             /// <returns></returns>
-            NewsBLL newbll = new NewsBLL();
+          //  NewsBLL newbll = new NewsBLL();
             //var catetory = newbll.GetNewsCategory();
             //foreach (var item in catetory)
             //{
@@ -107,7 +107,7 @@ namespace TestProject
 
 
             Console.ReadKey();
->>>>>>> fa72679c74b1186f466bfb3aa556a232df600e49
+
         }
     }
 }

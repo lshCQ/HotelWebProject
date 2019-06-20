@@ -18,28 +18,27 @@ namespace DAL
 
     public partial class HotelDBEntities : DbContext
     {
-        //public HotelDBEntities()
-        //    : base("name=HotelDBEntities")
-        //{
-        //}
-<<<<<<< HEAD
-        public HotelDBEntities()  :base("HotelDBEntities")
+ 
+        public HotelDBEntities()
+            //: base("HotelDBEntities")
+            : base(GetConnectionString())
         {
            // base.Database.Connection.ConnectionString = System.Configuration.ConfigurationManager.ConnectionStrings["conString"].ConnectionString;
         }
+
+        public static string GetConnectionString()
+        {
+            string constr  = System.Configuration.ConfigurationManager.ConnectionStrings["HotelDBEntities"].ConnectionString;
+            //如果constr加密，那么解密后返回
+            return constr;
+        }
+
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             throw new UnintentionalCodeFirstException();
-=======
-        public HotelDBEntities() :base("HotelDBEntities")
-        {
-            //base.Database.Connection.ConnectionString = System.Configuration.ConfigurationManager.ConnectionStrings["conString"].ConnectionString;
->>>>>>> fa72679c74b1186f466bfb3aa556a232df600e49
         }
-        //protected override void OnModelCreating(DbModelBuilder modelBuilder)
-        //{
-        //    throw new UnintentionalCodeFirstException();
-        //}
+ 
+ 
     
         public virtual DbSet<Dishes> Dishes { get; set; }
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]

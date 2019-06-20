@@ -45,6 +45,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -134,6 +140,8 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\CreateValidateCode.cs" />
+    <Compile Include="Models\UtilityHelper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -216,7 +224,7 @@
     <Content Include="Scripts\uploadPreview.js" />
     <Content Include="Scripts\validation-min.js" />
     <Content Include="Scripts\validation.js" />
-    <Content Include="Views\Company\Index.html" />
+    <Content Include="Views\Company-HHX\Index.html" />
     <Content Include="WebHotelManage\Css\Images\back.jpg" />
     <Content Include="WebHotelManage\Css\Images\default.png" />
     <Content Include="WebHotelManage\Css\Images\loginimg.jpg" />
@@ -467,13 +475,13 @@
     <Content Include="ThirdFile\ckeditor\README.md" />
     <Content Include="ThirdFile\ckeditor\skins\moono\readme.md" />
     <Content Include="Views\Dishes\DishesShow.cshtml" />
-    <Content Include="Views\Company\ComDesc.cshtml" />
-    <Content Include="Views\Company\Environment.cshtml" />
-    <Content Include="Views\Company\JoinUs.cshtml" />
-    <Content Include="Views\Company\Suggestions.cshtml" />
-    <Content Include="Views\Company\RecruitmentList.cshtml" />
-    <Content Include="Views\Company\AboutUs.cshtml" />
-    <Content Include="Views\Company\RecruitmentDetail.cshtml" />
+    <Content Include="Views\Company-HHX\ComDesc.cshtml" />
+    <Content Include="Views\Company-HHX\Environment.cshtml" />
+    <Content Include="Views\Company-HHX\JoinUs.cshtml" />
+    <Content Include="Views\Company-HHX\Suggestions.cshtml" />
+    <Content Include="Views\Company-HHX\RecruitmentList.cshtml" />
+    <Content Include="Views\Company-HHX\AboutUs.cshtml" />
+    <Content Include="Views\Company-HHX\RecruitmentDetail.cshtml" />
     <Content Include="Views\SysAdmin\AdminLogin.cshtml" />
     <Content Include="Views\SysAdmin\AdminMain.cshtml" />
     <Content Include="Views\Dishes\DishesManager.cshtml" />
@@ -482,16 +490,17 @@
     <Content Include="Views\News\NewsPublish.cshtml" />
     <Content Include="Views\News\NewsManager.cshtml" />
     <Content Include="Views\News\NewsUpdate.cshtml" />
-    <Content Include="Views\Company\BookManager.cshtml" />
-    <Content Include="Views\Company\RecruitmentManager.cshtml" />
-    <Content Include="Views\Company\RecruitmentPublish.cshtml" />
-    <Content Include="Views\Company\RecruitmentUpdate.cshtml" />
-    <Content Include="Views\Company\SuggestionManager.cshtml" />
-    <Content Include="Views\Company\Index.cshtml" />
+    <Content Include="Views\Company-HHX\BookManager.cshtml" />
+    <Content Include="Views\Company-HHX\RecruitmentManager.cshtml" />
+    <Content Include="Views\Company-HHX\RecruitmentPublish.cshtml" />
+    <Content Include="Views\Company-HHX\RecruitmentUpdate.cshtml" />
+    <Content Include="Views\Company-HHX\SuggestionManager.cshtml" />
+    <Content Include="Views\Company-HHX\Index.cshtml" />
+    <Content Include="Views\Company\ComDesclsh.cshtml" />
+    <Content Include="Views\Company\Indexlsh.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
