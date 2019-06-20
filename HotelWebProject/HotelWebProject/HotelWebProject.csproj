@@ -224,9 +224,6 @@
     <Content Include="Scripts\uploadPreview.js" />
     <Content Include="Scripts\validation-min.js" />
     <Content Include="Scripts\validation.js" />
-
-    <Content Include="Views\Company-HHX\Index.html" />
-
     <Content Include="WebHotelManage\Css\Images\back.jpg" />
     <Content Include="WebHotelManage\Css\Images\default.png" />
     <Content Include="WebHotelManage\Css\Images\loginimg.jpg" />
@@ -497,9 +494,8 @@
     <Content Include="Views\Company-HHX\RecruitmentPublish.cshtml" />
     <Content Include="Views\Company-HHX\RecruitmentUpdate.cshtml" />
     <Content Include="Views\Company-HHX\SuggestionManager.cshtml" />
-    <Content Include="Views\Company-HHX\Index.cshtml" />
-    <Content Include="Views\Company\ComDesclsh.cshtml" />
-    <Content Include="Views\Company\Indexlsh.cshtml" />
+    <Content Include="Views\Company\ComDesc.cshtml" />
+    <Content Include="Views\Company\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

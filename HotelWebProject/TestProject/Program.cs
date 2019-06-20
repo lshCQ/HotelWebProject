@@ -12,49 +12,10 @@ namespace TestProject
     {
         static void Main(string[] args)
         {
-<<<<<<< HEAD
  
-=======
->>>>>>> ef72d0c0322efb181db581180f7876206efe5f37
 
             NewsBLL newbll = new NewsBLL();
-            //var  catetory = newbll.GetNewsCategory();
-            //foreach (var item in catetory)
-            //{
-            //    Console.WriteLine( item.CategoryId+"\t"+item.CategoryName);
-            //}
-            //Console.ReadKey();
-            //NewsCategory.CategoryId
-            //News news = new News();
-            //news.NewsTitle = "这是不是一个标题";
-            //news.NewsCategory = new NewsCategory {   CategoryId =3 , CategoryName = "社会新闻" };
-            //news.NewsContents = "这不是一个正经的内容内容！";
-            //news.NewsId = 1000;
-            //news.CategoryId = 3;
-            //newbll.ModifyNew(news);
-
-
-<<<<<<< HEAD
- 
-=======
->>>>>>> ef72d0c0322efb181db581180f7876206efe5f37
-
-            /// <summary>
-            /// GetNewsCategory();测试
-            /// </summary>
-            /// <param name="news"></param>
-            /// <returns></returns>
-<<<<<<< HEAD
-          //  NewsBLL newbll = new NewsBLL();
-=======
-            //NewsBLL newbll = new NewsBLL();
->>>>>>> ef72d0c0322efb181db581180f7876206efe5f37
-            //var catetory = newbll.GetNewsCategory();
-            //foreach (var item in catetory)
-            //{
-            //    Console.WriteLine(item.CategoryId + "\t" + item.CategoryName);
-            //}
-
+           
 
             /// <summary>
             /// 添加测试
@@ -181,10 +142,7 @@ namespace TestProject
             Console.WriteLine(RB.DeleteRecruitment(100004));
 
             Console.ReadKey();
-<<<<<<< HEAD
-
-=======
->>>>>>> ef72d0c0322efb181db581180f7876206efe5f37
+ 
         }
     }
 }

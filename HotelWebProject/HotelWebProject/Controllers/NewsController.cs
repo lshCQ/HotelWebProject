@@ -20,7 +20,6 @@ namespace HotelWebProject.Controllers
         }
         public ActionResult NewsList()
         {
-
             return View();
         }
 
@@ -106,17 +105,13 @@ namespace HotelWebProject.Controllers
                 TempData["LoginMsg"] = message;
                 return RedirectToAction("NewsPublish");
             }
-<<<<<<< HEAD
+ 
             nb.PublishNew(news);
-=======
+ 
 
-//<<<<<<< HEAD
-         //   nb.AddNew(news);
-//=======
+ 
             nb.PublishNew(news);
-//>>>>>>> fa72679c74b1186f466bfb3aa556a232df600e49
-
->>>>>>> ef72d0c0322efb181db581180f7876206efe5f37
+ 
             return RedirectToAction("NewsManager", "News");
         }
 

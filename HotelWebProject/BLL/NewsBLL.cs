@@ -18,21 +18,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-<<<<<<< HEAD
  
-=======
-
->>>>>>> ef72d0c0322efb181db581180f7876206efe5f37
-
 namespace BLL
 {
     public class NewsBLL
     {
-<<<<<<< HEAD
  
-=======
-
->>>>>>> ef72d0c0322efb181db581180f7876206efe5f37
         private NewsServices newsdll = new NewsServices();
 
         /// <summary>
