@@ -18,6 +18,7 @@ namespace DAL
 
     public partial class HotelDBEntities : DbContext
     {
+<<<<<<< HEAD
  
         public HotelDBEntities()
             //: base("HotelDBEntities")
@@ -39,6 +40,31 @@ namespace DAL
         }
  
  
+=======
+        //public HotelDBEntities()
+        //    : base("name=HotelDBEntities")
+        //{
+        //}
+//<<<<<<< HEAD
+        public HotelDBEntities()  :base("HotelDBEntities")
+        {
+           // base.Database.Connection.ConnectionString = System.Configuration.ConfigurationManager.ConnectionStrings["conString"].ConnectionString;
+        }
+        //protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        //{
+        //    throw new UnintentionalCodeFirstException();
+        //}
+//=======
+//        public HotelDBEntities() :base("HotelDBEntities")
+//        {
+//            //base.Database.Connection.ConnectionString = System.Configuration.ConfigurationManager.ConnectionStrings["conString"].ConnectionString;
+////>>>>>>> fa72679c74b1186f466bfb3aa556a232df600e49
+//        }
+        //protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        //{
+        //    throw new UnintentionalCodeFirstException();
+        //}
+>>>>>>> ef72d0c0322efb181db581180f7876206efe5f37
     
         public virtual DbSet<Dishes> Dishes { get; set; }
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]

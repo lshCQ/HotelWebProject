@@ -11,6 +11,8 @@
 *└──────────────────────────────────────────────────────────────┘
 */
 
+using DAL;
+using Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -21,5 +23,39 @@ namespace BLL
 {
     public class RecruitmentBLL
     {
+        private RecruitmentServices recruitments = new RecruitmentServices();
+
+        ///<summary>
+        ///发布招聘信息
+        ///<summary>
+        public int PublishRecruitment(Recruitment recruitment)
+        {
+            return recruitments.PublishRecruitment(recruitment);
+        }
+
+        ///<summary>
+        ///修改招聘信息，默认修改该记录得所有信息
+        ///<summary>
+        public int ModifyRecruitment(Recruitment recruitment)
+        {
+            return recruitments.ModifyRecruitment(recruitment);
+        }
+
+        ///<summary>
+        ///删除招聘信息
+        ///<summary>
+        public int DeleteRecruitment(int postid)
+        {
+            return recruitments.DeleteRecruitment(postid);
+        }
+
+        ///<summary>
+        ///查询所有招聘信息
+        ///<summary>
+
+        public List<Recruitment> GetAllRecruitment()
+        {
+            return recruitments.GetAllRecruitment();
+        }
     }
 }
