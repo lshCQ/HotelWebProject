@@ -23,6 +23,7 @@ D:\temp文件(桌面相关)\研发部\A.工作输出\汇总\目前项目\酒店�
 D:\temp文件(桌面相关)\研发部\A.工作输出\汇总\目前项目\酒店项目\HotelWebProject\BLL\bin\Debug\BLL.pdb
 D:\temp文件(桌面相关)\研发部\A.工作输出\汇总\目前项目\酒店项目\HotelWebProject\BLL\bin\Debug\DAL.dll
 D:\temp文件(桌面相关)\研发部\A.工作输出\汇总\目前项目\酒店项目\HotelWebProject\BLL\bin\Debug\Models.dll
+D:\temp文件(桌面相关)\研发部\A.工作输出\汇总\目前项目\酒店项目\HotelWebProject\BLL\bin\Debug\log4net.dll
 D:\temp文件(桌面相关)\研发部\A.工作输出\汇总\目前项目\酒店项目\HotelWebProject\BLL\bin\Debug\EntityFramework.dll
 D:\temp文件(桌面相关)\研发部\A.工作输出\汇总\目前项目\酒店项目\HotelWebProject\BLL\bin\Debug\DAL.pdb
 D:\temp文件(桌面相关)\研发部\A.工作输出\汇总\目前项目\酒店项目\HotelWebProject\BLL\bin\Debug\DAL.dll.config
@@ -34,4 +35,3 @@ D:\temp文件(桌面相关)\研发部\A.工作输出\汇总\目前项目\酒店�
 D:\temp文件(桌面相关)\研发部\A.工作输出\汇总\目前项目\酒店项目\HotelWebProject\BLL\obj\Debug\BLL.csproj.CopyComplete
 D:\temp文件(桌面相关)\研发部\A.工作输出\汇总\目前项目\酒店项目\HotelWebProject\BLL\obj\Debug\BLL.dll
 D:\temp文件(桌面相关)\研发部\A.工作输出\汇总\目前项目\酒店项目\HotelWebProject\BLL\obj\Debug\BLL.pdb
-D:\temp文件(桌面相关)\研发部\A.工作输出\汇总\目前项目\酒店项目\HotelWebProject\BLL\bin\Debug\log4net.dll
