@@ -3,7 +3,7 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
-    <title>公司简介</title>
+    <title>@ViewBag.Title</title>
     <title>杭州中式餐馆酒店</title>
     <link rel="Shortcut Icon" href="~/Styles/Images/clogo.ico" />
     <link href="~/Styles/MainPage.css" rel="stylesheet" type="text/css" />
@@ -77,6 +77,7 @@
                 
                 <div class="contentDiv">
                     @RenderSection("righttitle", required: false)
+
                     @RenderBody();
                 </div>
             </div>

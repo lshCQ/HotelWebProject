@@ -12,10 +12,7 @@ namespace TestProject
     {
         static void Main(string[] args)
         {
-<<<<<<< HEAD
  
-=======
->>>>>>> ef72d0c0322efb181db581180f7876206efe5f37
 
             NewsBLL newbll = new NewsBLL();
             //var  catetory = newbll.GetNewsCategory();
@@ -33,27 +30,10 @@ namespace TestProject
             //news.CategoryId = 3;
             //newbll.ModifyNew(news);
 
-
-<<<<<<< HEAD
  
-=======
->>>>>>> ef72d0c0322efb181db581180f7876206efe5f37
 
-            /// <summary>
-            /// GetNewsCategory();测试
-            /// </summary>
-            /// <param name="news"></param>
-            /// <returns></returns>
-<<<<<<< HEAD
-          //  NewsBLL newbll = new NewsBLL();
-=======
-            //NewsBLL newbll = new NewsBLL();
->>>>>>> ef72d0c0322efb181db581180f7876206efe5f37
-            //var catetory = newbll.GetNewsCategory();
-            //foreach (var item in catetory)
-            //{
-            //    Console.WriteLine(item.CategoryId + "\t" + item.CategoryName);
-            //}
+ 
+ 
 
 
             /// <summary>
@@ -181,10 +161,7 @@ namespace TestProject
             Console.WriteLine(RB.DeleteRecruitment(100004));
 
             Console.ReadKey();
-<<<<<<< HEAD
-
-=======
->>>>>>> ef72d0c0322efb181db581180f7876206efe5f37
+ 
         }
     }
 }
