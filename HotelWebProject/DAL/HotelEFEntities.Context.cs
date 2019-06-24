@@ -18,11 +18,6 @@ namespace DAL
 
     public partial class HotelDBEntities : DbContext
     {
-<<<<<<< HEAD
-
-=======
- 
->>>>>>> a6ddb9b328909e41f6095911ee096366ba5ee457
  
         public HotelDBEntities()
             //: base("HotelDBEntities")
@@ -43,15 +38,6 @@ namespace DAL
             throw new UnintentionalCodeFirstException();
         }
  
- 
-<<<<<<< HEAD
-
-
-    
-=======
- 
-      
->>>>>>> a6ddb9b328909e41f6095911ee096366ba5ee457
         public virtual DbSet<Dishes> Dishes { get; set; }
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         [Key]

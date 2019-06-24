@@ -32,14 +32,24 @@ namespace BLL
         /// <param name="userid"></param>
         /// <param name="userpwd"></param>
         /// <returns></returns>
-        public SysAdmins GetAdmin(string userid, string userpwd)
+        //public SysAdmins GetAdmin(string userid, string userpwd)
+        //{
+        //    SysAdmins adminObj = adminDal.GetAdmin(userid, userpwd);
+        //    if (adminObj != null)
+        //    {
+        //        HttpContext.Current.Session["user"] = adminObj;
+        //    }
+        //    return adminObj;
+        //}
+        public SysAdmins GetUserById(int userid)
         {
-            SysAdmins adminObj = adminDal.GetAdmin(userid, userpwd);
+            SysAdmins adminObj = adminDal.GetUserById(userid);
             if (adminObj != null)
             {
                 HttpContext.Current.Session["user"] = adminObj;
             }
             return adminObj;
+            
         }
 
     }

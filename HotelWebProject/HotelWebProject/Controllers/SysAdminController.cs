@@ -50,8 +50,8 @@ namespace HotelWebProject.Controllers
             {
                 //检验账户是否存在
                 SysAdminsBLL admin = new SysAdminsBLL();
-                SysAdmins adminModel = admin.GetAdmin(uname, pwd);
-                if (adminModel != null)
+                SysAdmins adminModel = admin.GetUserById(Convert.ToInt32(uname));
+                if (adminModel.LoginId==Convert.ToInt32(uname)&& adminModel.LoginPwd==pwd)
                 {
                     message = "ok";
                 }

@@ -1,111 +1,75 @@
-﻿
-<!DOCTYPE html>
-<html lang="zh">
-<head>
-    <meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
-    <meta charset="utf-8" />
-    <title> 网站后台管理</title>
-    <meta name="viewport" content="width=device-width" />
-    <link href="~/WebHotelManage/Css/ManageLayout.css" rel="stylesheet" />
-</head>
-<body>
-    <div id="container">
-        <div id="top">
-            <h1 class="toptxt">风味楼大酒店</h1>
-            <h1 class="Title">后台管理系统</h1>
-        </div>
-        <div id="nav">
-            <div id="navlink">
-                <ul>
-                    <li><a href="/SysAdmin/AdminMain">首页</a></li>
-                    <li><a href="/Dishes/DishesPublish">添加菜品</a></li>
-                    <li><a href="/Dishes/DishesManager">菜品管理</a></li>
-                    <li><a href="/News/NewsPublish">发布新闻</a></li>
-                    <li><a href="/News/NewsManager">新闻管理</a></li>
-                    <li><a href="/Company/BookManager">预订管理</a></li>
-                    <li><a href="/Company/SuggestionManager">投诉管理</a></li>
-                    <li><a href="/Company/RecruitmentPublish">发布招聘</a></li>
-                    <li><a href="/Company/RecruitmentManager">招聘管理</a></li>
-                    <li><a class="navLast" href="/SysAdmin/ExitSys">退出系统</a></li>
-                </ul>
+﻿@{
+    ViewBag.Title = "添加菜品";
+    Layout = "~/Views/Shared/_LayoutManage.cshtml";
+}
+
+@inherits System.Web.Mvc.WebViewPage
+
+<div id="content">
+    <link href="~/Styles/Dishes.css" rel="stylesheet" />
+    <script src="~/Scripts/jquery-1.8.2.min.js"></script>
+    <script src="~/Scripts/validation-min.js"></script>
+    <script src="~/Scripts/uploadPreview.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $("#dishesImg").uploadPreview({ Img: "imghead", width: 302, Height: 227 })
+        });
+    </script>
+
+    <form action="" enctype="multipart/form-data" id="mainForm" method="post" name="mainForm">
+        <div class="txtItemdiv">
+            <div class="itemtitle">
+                菜品名称：
+            </div>
+            <div class="itemcontent">
+                <input class="txt" id="DishesName" name="DishesName" type="text" value="" />
+                <span style="color:red">*</span>
             </div>
         </div>
-        <div id="content">
-
-            <link href="~/Styles/Dishes.css" rel="stylesheet" />
-            <script src="~/Scripts/jquery-1.8.2.min.js"></script>
-            <script src="~/Scripts/validation-min.js"></script>
-            <script src="~/Scripts/uploadPreview.js"></script>
-            <script type="text/javascript">
-    $(function () {
-        $("#dishesImg").uploadPreview({ Img: "imghead", width: 302, Height: 227 })
-    });
-            </script>
-
-
-            <form action="" enctype="multipart/form-data" id="mainForm" method="post" name="mainForm">
-                <div class="txtItemdiv">
-                    <div class="itemtitle">
-                        菜品名称：
-                    </div>
-                    <div class="itemcontent">
-                        <input class="txt" id="DishesName" name="DishesName" type="text" value="" />
-                        <span style="color:red">*</span>
-                    </div>
-                </div>
-                <div class="txtItemdiv">
-                    <div class="itemtitle">
-                        菜品价格：
-                    </div>
-                    <div class="itemcontent">
-                        <input class="txt" id="UnitPrice" name="UnitPrice" type="text" value="" />
-                        <span style="color:red">*</span>
-                    </div>
-                </div>
-                <div class="txtItemdiv">
-                    <div class="itemtitle">
-                        菜品分类：
-                    </div>
-                    <div class="itemcontent">
-                        <select id="CategoryId" name="CategoryId">
-                            <option selected="selected" value="1">川菜</option>
-                            <option value="2">湘菜</option>
-                            <option value="3">鲁菜</option>
-                            <option value="4">海鲜类</option>
-                            <option value="5">其他</option>
-                        </select>
-                        <span style="color:red">*</span>
-                    </div>
-                </div>
-                <div class="txtItemdiv">
-                    <div class="itemtitle">
-                        菜品图片：
-                    </div>
-                    <div class="itemcontent">
-                        <img id="imghead" src="~/WebHotelManage/Css/Images/default.png" width="302" height="227" />  （要求图片必须小于2M）
-                    </div>
-                </div>
-                <div class="txtItemdiv">
-                    <div class="itemtitle">
-                        要上传的图片：
-                    </div>
-                    <div class="itemcontent">
-                        <input type="file" id="dishesImg" name="dishesImg" />
-                    </div>
-                </div>
-                <div class="txtItemdiv">
-                    <div class="itemtitle" style="margin-left:80px;">
-                        <button class="btncss" type="submit" id="btnAdd" formaction="EidtDishes">新增菜品</button>
-                    </div>
-                </div>
-            </form>
-        </div>
-        <div id="footer">
-            <div id="bq">
-                <a target="_blank" href="/Home/Index">[网站首页]</a>&nbsp;&nbsp;版权所有 Copyright(C)2010-2020
-                好运来酒店&nbsp;&nbsp;&nbsp;[当前用户:李浩]
+        <div class="txtItemdiv">
+            <div class="itemtitle">
+                菜品价格：
+            </div>
+            <div class="itemcontent">
+                <input class="txt" id="UnitPrice" name="UnitPrice" type="text" value="" />
+                <span style="color:red">*</span>
             </div>
         </div>
-    </div>
-</body>
-</html>
+        <div class="txtItemdiv">
+            <div class="itemtitle">
+                菜品分类：
+            </div>
+            <div class="itemcontent">
+                <select id="CategoryId" name="CategoryId">
+                    <option selected="selected" value="1">川菜</option>
+                    <option value="2">湘菜</option>
+                    <option value="3">鲁菜</option>
+                    <option value="4">海鲜类</option>
+                    <option value="5">其他</option>
+                </select>
+                <span style="color:red">*</span>
+            </div>
+        </div>
+        <div class="txtItemdiv">
+            <div class="itemtitle">
+                菜品图片：
+            </div>
+            <div class="itemcontent">
+                <img id="imghead" src="~/Areas/WebHotelManage/Css/Images/default.png" width="302" height="227" />  （要求图片必须小于2M）
+            </div>
+        </div>
+        <div class="txtItemdiv">
+            <div class="itemtitle">
+                要上传的图片：
+            </div>
+            <div class="itemcontent">
+                <input type="file" id="dishesImg" name="dishesImg" />
+            </div>
+        </div>
+        <div class="txtItemdiv">
+            <div class="itemtitle" style="margin-left:80px;">
+                <button class="btncss" type="submit" id="btnAdd" formaction="EidtDishes">新增菜品</button>
+            </div>
+        </div>
+    </form>
+</div>

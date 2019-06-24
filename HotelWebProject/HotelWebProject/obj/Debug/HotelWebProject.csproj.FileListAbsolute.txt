@@ -99,18 +99,3 @@ D:\temp文件(桌面相关)\研发部\A.工作输出\汇总\目前项目\酒店�
 D:\temp文件(桌面相关)\研发部\A.工作输出\汇总\目前项目\酒店项目\HotelWebProject\HotelWebProject\obj\Debug\HotelWebProject.csproj.CopyComplete
 D:\temp文件(桌面相关)\研发部\A.工作输出\汇总\目前项目\酒店项目\HotelWebProject\HotelWebProject\obj\Debug\HotelWebProject.dll
 D:\temp文件(桌面相关)\研发部\A.工作输出\汇总\目前项目\酒店项目\HotelWebProject\HotelWebProject\obj\Debug\HotelWebProject.pdb
-<<<<<<< HEAD
-D:\temp文件(桌面相关)\研发部\A.工作输出\汇总\目前项目\酒店项目\HotelWebProject\HotelWebProject\bin\BLL.dll
-D:\temp文件(桌面相关)\研发部\A.工作输出\汇总\目前项目\酒店项目\HotelWebProject\HotelWebProject\bin\log4net.dll
-D:\temp文件(桌面相关)\研发部\A.工作输出\汇总\目前项目\酒店项目\HotelWebProject\HotelWebProject\bin\EntityFramework.dll
-D:\temp文件(桌面相关)\研发部\A.工作输出\汇总\目前项目\酒店项目\HotelWebProject\HotelWebProject\bin\BLL.pdb
-D:\temp文件(桌面相关)\研发部\A.工作输出\汇总\目前项目\酒店项目\HotelWebProject\HotelWebProject\bin\EntityFramework.xml
-D:\temp文件(桌面相关)\研发部\A.工作输出\汇总\目前项目\酒店项目\HotelWebProject\HotelWebProject\bin\zh-Hans\EntityFramework.resources.dll
-D:\temp文件(桌面相关)\研发部\A.工作输出\汇总\目前项目\酒店项目\HotelWebProject\HotelWebProject\bin\EntityFramework.SqlServer.dll
-D:\temp文件(桌面相关)\研发部\A.工作输出\汇总\目前项目\酒店项目\HotelWebProject\HotelWebProject\bin\EntityFramework.SqlServer.xml
-D:\temp文件(桌面相关)\研发部\A.工作输出\汇总\目前项目\酒店项目\HotelWebProject\HotelWebProject\bin\zh-Hans\EntityFramework.SqlServer.resources.dll
-D:\temp文件(桌面相关)\研发部\A.工作输出\汇总\目前项目\酒店项目\HotelWebProject\HotelWebProject\bin\DAL.dll
-D:\temp文件(桌面相关)\研发部\A.工作输出\汇总\目前项目\酒店项目\HotelWebProject\HotelWebProject\bin\DAL.pdb
-D:\temp文件(桌面相关)\研发部\A.工作输出\汇总\目前项目\酒店项目\HotelWebProject\HotelWebProject\bin\DAL.dll.config
-=======
->>>>>>> a6ddb9b328909e41f6095911ee096366ba5ee457

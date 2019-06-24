@@ -15,7 +15,6 @@ namespace TestProject
  
 
             NewsBLL newbll = new NewsBLL();
-<<<<<<< HEAD
             //var  catetory = newbll.GetNewsCategory();
             //foreach (var item in catetory)
             //{
@@ -33,12 +32,6 @@ namespace TestProject
 
  
 
- 
- 
-
-=======
-           
->>>>>>> a6ddb9b328909e41f6095911ee096366ba5ee457
 
             /// <summary>
             /// 添加测试
