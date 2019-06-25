@@ -55,6 +55,12 @@ namespace BLL
         {
                 return dishesbook.GetAllBook();
         }
-        
-    }
+
+
+        public int DeleteDishesBook(int bookId)
+        {
+            return dishesbook.DeleteDishesBook(bookId);
+        }
+
+        }
 }

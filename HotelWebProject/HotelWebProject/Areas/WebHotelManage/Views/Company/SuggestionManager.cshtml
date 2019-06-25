@@ -7,8 +7,9 @@
 
 
 <div id="content">
-
+   
     <div class="itemdiv">
+
         <div class="book-title">
             投诉时间
         </div>
@@ -27,30 +28,37 @@
         <div class="book-title" style="width: 100px;">
             操作
         </div>
-        <div class="book-title">
-            2017/9/29 17:38:21
-        </div>
-        <div class="book-title">
-            杜小杰
-        </div>
-        <div class="book-title">
-            15687423456
-        </div>
-        <div class="book-title">
-            duxiaojie@qq.com
-        </div>
-        <div class="book-title" style="width: 324px;">
-            在该店举行一次婚礼
-        </div>
-        <div class="book-title" style="width: 100px;">
-            <a href='HandleSuggestion?suggestionId=100000'>受理投诉</a>
-        </div>
-        <div class="bookdetail">
-            <div class="book-comment">
-                感觉总体服务不到位，菜品味道没有以前的好。
-            </div>
-        </div>
-        <div class="book-title">
+        @if (ViewBag.suggestionList != null && ViewBag.suggestionList.Count != 0)
+        {
+            foreach (var item in ViewBag.suggestionList)
+            {
+                <div class="book-title">
+                   @item.SuggestionTime 
+                </div>
+                <div class="book-title">
+                    @item.CustomerName
+                </div>
+                <div class="book-title">
+                    @item.PhoneNumber
+                </div>
+                <div class="book-title">
+                    @item.Email
+                </div>
+                <div class="book-title" style="width: 324px;">
+                    @item.ConsumeDesc
+                </div>
+                <div class="book-title" style="width: 100px;">
+                    <a href='/Company/HandleSuggestion?suggestionId=@item.SuggestionId'>受理投诉</a>
+                </div>
+                <div class="bookdetail">
+                    <div class="book-comment">
+                       @item.SuggestionDesc
+                    </div>
+                </div>
+            }
+        }
+
+        @*<div class="book-title">
             2017/9/29 17:38:21
         </div>
         <div class="book-title">
@@ -72,9 +80,9 @@
             <div class="book-comment">
                 感觉上菜有点慢,希望后续改进。
             </div>
-        </div>
+        </div>*@
 
     </div>
 
-</div>
+        </div>
 

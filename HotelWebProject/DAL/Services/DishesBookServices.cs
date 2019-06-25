@@ -36,7 +36,7 @@ namespace DAL
             using (HotelDBEntities db = new HotelDBEntities())
             {
                 db.DishesBook.Add(dishesBook);
-                
+
                 return db.SaveChanges();
             }
 
@@ -49,7 +49,7 @@ namespace DAL
         /// <param name="bookId"></param>
         /// <param name="status"></param>
         /// <returns></returns>
-        public int ModifyBook(int bookId,string status)
+        public int ModifyBook(int bookId, string status)
         {
             /*
             1.封装一个实体，所有属性都写上
@@ -58,7 +58,7 @@ namespace DAL
 
              */
 
-            using (HotelDBEntities db = new HotelDBEntities()) 
+            using (HotelDBEntities db = new HotelDBEntities())
             {
                 DishesBook dishesBook = new DishesBook();
                 dishesBook.BookId = bookId;
@@ -81,7 +81,17 @@ namespace DAL
                 return list;
             }
         }
+        public int DeleteDishesBook(int bookId)
+        {
+            DishesBook dishesbook = new DishesBook();
+            dishesbook.BookId = bookId;
+            using (HotelDBEntities db = new HotelDBEntities())
+            {
+                db.DishesBook.Attach(dishesbook);
+                db.DishesBook.Remove(dishesbook);
+                return db.SaveChanges();
+            }
 
-
+        }
     }
 }

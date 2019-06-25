@@ -55,14 +55,14 @@ namespace DAL
         /// </summary>
         /// 把受理投诉改为已受理。极为修改StatusId值。0>>1
 
-        public int ReciveSuggestion(int suggestionid, string statusid)
+        public int ReciveSuggestion(int suggestionid)
         {
                 using (HotelDBEntities db = new HotelDBEntities())
                 {
                 Suggestion Suggestion = new Suggestion();
                 Suggestion.SuggestionId = suggestionid;
                 db.Suggestion.Attach(Suggestion);
-                Suggestion.StatusId = Convert.ToInt32(statusid);
+                Suggestion.StatusId = 1;
                 return db.SaveChanges();
             }
 

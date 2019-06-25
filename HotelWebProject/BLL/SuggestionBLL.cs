@@ -46,9 +46,9 @@ namespace BLL
         /// </summary>
         /// 把受理投诉改为已受理。极为修改StatusId值。0>>1
 
-        public int ReciveSuggestion(int suggestionid, string statusid)
+        public int ReciveSuggestion(int suggestionid)
         {
-            return suggestions.ReciveSuggestion(suggestionid, statusid);
+            return suggestions.ReciveSuggestion(suggestionid);
         }
     }
 }

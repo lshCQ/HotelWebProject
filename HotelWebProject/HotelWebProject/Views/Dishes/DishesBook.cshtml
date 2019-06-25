@@ -6,6 +6,7 @@
 <link href="~/Styles/MainPage.css" rel="stylesheet" type="text/css" />
 <link href="~/Styles/MasterPage.css" rel="stylesheet" type="text/css" />
 <link href="~/Styles/Dishes.css" rel="stylesheet" type="text/css" />
+<script src="../../ThirdFile/My97DatePicker/WdatePicker.js"></script>
 @section lefttitle{
     <div class="lefttitle">
         菜品分类
@@ -31,7 +32,7 @@
 }
 <div class="contentDiv">
     <div class="cdiv">
-        <form action="/" id="mainForm" method="post">
+        <form action="/Company/SubmitDishesBook" id="mainForm" method="post">
             <div class="item">
                 <div class="itemtitle">
                     酒店名称：
@@ -130,7 +131,7 @@
                 <div class="itemtitle">
                 </div>
                 <div class="itemcontent">
-                    <input type="button" class="btncss" id="submitMsg" value="马上预定" />
+                    <input type="submit" class="btncss" id="submitMsg" value="马上预定" />
                 </div>
             </div>
         </form>
