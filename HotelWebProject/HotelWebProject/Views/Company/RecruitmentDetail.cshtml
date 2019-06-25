@@ -1,4 +1,4 @@
-﻿
+﻿@model Models.Recruitment
 @{
     ViewBag.Title = "招聘信息";
     Layout = "~/Views/Shared/_Layout.cshtml";
@@ -61,7 +61,7 @@
                 职位名称：
             </div>
             <div class="itemcontent">
-                总经理助理
+               @Model.PostName
             </div>
         </div>
         <div class="item">
@@ -69,7 +69,7 @@
                 职位类型：
             </div>
             <div class="itemcontent">
-                全职
+                @Model.PostType
             </div>
         </div>
         <div class="item">
@@ -77,7 +77,7 @@
                 工作经验：
             </div>
             <div class="itemcontent">
-                3年 年
+                @Model.Experience
             </div>
         </div>
         <div class="item">
@@ -85,7 +85,7 @@
                 学历要求：
             </div>
             <div class="itemcontent">
-                本科
+                @Model.EduBackground
             </div>
         </div>
         <div class="item">
@@ -93,7 +93,7 @@
                 招聘人数：
             </div>
             <div class="itemcontent">
-                1
+                @Model.RequireCount
             </div>
         </div>
         <div class="item">
@@ -101,7 +101,7 @@
                 发布时间：
             </div>
             <div class="itemcontent">
-                2017/9/29 17:38:21
+                @Model.PublishTime
             </div>
         </div>
         <div class="item">
@@ -112,7 +112,7 @@
             </div>
         </div>
         <div class="positiondesc">
-            负责日常的文秘工作
+            @Model.PostDesc
         </div>
         <div class="item">
             <div class="itemtitle">
@@ -122,14 +122,14 @@
             </div>
         </div>
         <div class="positiondesc">
-            要求具备该职位3年以上经营管理经验
+            @Model.PostRequire
         </div>
         <div class="item">
             <div class="itemtitle">
                 联 系 人：
             </div>
             <div class="itemcontent">
-                李超阳
+                @Model.Manager
             </div>
         </div>
         <div class="item">
@@ -137,7 +137,7 @@
                 联系电话：
             </div>
             <div class="itemcontent">
-                15689011231
+                @Model.PhoneNumber
             </div>
         </div>
         <div class="item">
@@ -145,7 +145,7 @@
                 电子邮件：
             </div>
             <div class="itemcontent">
-                lichaoyang@hyl.com
+                @Model.Email
             </div>
         </div>
     </div>

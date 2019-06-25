@@ -2,8 +2,8 @@
     ViewBag.Title = "菜品修改";
     Layout = "~/Views/Shared/_LayoutManage.cshtml";
 }
-
-@inherits System.Web.Mvc.WebViewPage
+@model Models.Dishes
+@*@inherits System.Web.Mvc.WebViewPage*@
 
 <div id="content">
     <link href="~/Styles/Dishes.css" rel="stylesheet" />
@@ -22,7 +22,8 @@
                 菜品名称：
             </div>
             <div class="itemcontent">
-                <input class="txt" id="DishesName" name="DishesName" type="text" value="" />
+                <input data-val="true" data-val-number="字段 NewsId 必须是一个数字。" data-val-required="NewsId 字段是必需的。" id="DishesId" name="DishesId" type="hidden" value="@Model.DishesId" />
+                <input class="txt" id="DishesName" name="DishesName" type="text" value="@Model.DishesName" />
                 <span style="color:red">*</span>
             </div>
         </div>
@@ -31,7 +32,7 @@
                 菜品价格：
             </div>
             <div class="itemcontent">
-                <input class="txt" id="UnitPrice" name="UnitPrice" type="text" value="" />
+                <input class="txt" id="UnitPrice" name="UnitPrice" type="text" value="@Model.UnitPrice" />
                 <span style="color:red">*</span>
             </div>
         </div>
@@ -41,11 +42,12 @@
             </div>
             <div class="itemcontent">
                 <select id="CategoryId" name="CategoryId">
-                    <option selected="selected" value="1">川菜</option>
-                    <option value="2">湘菜</option>
-                    <option value="3">鲁菜</option>
-                    <option value="4">海鲜类</option>
-                    <option value="5">其他</option>
+                        <option selected="selected" value="1">川菜</option>
+                        <option value="2">湘菜</option>
+                        <option value="3">鲁菜</option>
+                        <option value="4">海鲜类</option>
+
+
                 </select>
                 <span style="color:red">*</span>
             </div>
@@ -55,7 +57,7 @@
                 菜品图片：
             </div>
             <div class="itemcontent">
-                <img id="imghead" src="~/WebHotelManage/Css/Images/default.png" width="302" height="227" />  （要求图片必须小于2M）
+                <img id="imghead" src="../../Images/dishes/@Model.DishesImg" width="302" height="227" />  （要求图片必须小于2M）
             </div>
         </div>
         <div class="txtItemdiv">
@@ -68,7 +70,7 @@
         </div>
         <div class="txtItemdiv">
             <div class="itemtitle" style="margin-left:80px;">
-                <button class="btncss" type="submit" id="btnAdd" formaction="EidtDishes">新增菜品</button>
+                <button class="btncss" type="submit" id="btnAdd" formaction="UpdateDishes">确认修改</button><label style="color:red">@TempData</label>
             </div>
         </div>
     </form>

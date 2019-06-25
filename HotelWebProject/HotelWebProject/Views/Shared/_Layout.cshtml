@@ -75,10 +75,10 @@
             </div>
             <div id="rightpage">
                 
-                <div class="contentDiv">
+                <div class="contentDiv" style="overflow-y:scroll;overflow-x:hidden">
                     @RenderSection("righttitle", required: false)
 
-                    @RenderBody();
+                    @RenderBody()
                 </div>
             </div>
         </div>

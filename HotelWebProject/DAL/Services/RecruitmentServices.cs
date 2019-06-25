@@ -75,6 +75,18 @@ namespace DAL
             {
                 return (from d in hdb.Recruitment select d).ToList();
             }
-         }
-     }
+        }
+
+        ///<summary>
+        ///根据ID查询招聘信息
+        ///<summary>
+        public Recruitment GetRecruitmentById(int RecruitmentId)
+        {
+            using (HotelDBEntities db = new HotelDBEntities())
+            {
+                return (from dc in db.Recruitment where dc.PostId == RecruitmentId select dc).FirstOrDefault();
+            }
+        }
+
+    }
 }

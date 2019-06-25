@@ -30,72 +30,39 @@
         <div class="bitem-title" style="width: 120px;">
             操作
         </div>
-        <div class="bitem">
-            大堂经理
-        </div>
-        <div class="bitem">
-            全职
-        </div>
-        <div class="bitem">
-            3年
-        </div>
-        <div class="bitem">
-            本科
-        </div>
-        <div class="bitem">
-            2
-        </div>
-        <div class="bitem">
-            天津
-        </div>
-        <div class="bitem" style="width: 120px;">
-            <a href='/Company/RecruitmentUpdate?postId=100000'>修改</a>&nbsp;&nbsp;
-            <a href='DeleteRecruitment?postId=100000' onclick='if(confirm("确定要删除吗?")==false) return false;'>删除</a>&nbsp;&nbsp;
-        </div>
-        <div class="bitem">
-            接待员
-        </div>
-        <div class="bitem">
-            全职
-        </div>
-        <div class="bitem">
-            1年
-        </div>
-        <div class="bitem">
-            高中
-        </div>
-        <div class="bitem">
-            5
-        </div>
-        <div class="bitem">
-            北京
-        </div>
-        <div class="bitem" style="width: 120px;">
-            <a href='/Company/RecruitmentUpdate?postId=100001'>修改</a>&nbsp;&nbsp;
-            <a href='DeleteRecruitment?postId=100001' onclick='if(confirm("确定要删除吗?")==false) return false;'>删除</a>&nbsp;&nbsp;
-        </div>
-        <div class="bitem">
-            总经理助理
-        </div>
-        <div class="bitem">
-            全职
-        </div>
-        <div class="bitem">
-            3年
-        </div>
-        <div class="bitem">
-            本科
-        </div>
-        <div class="bitem">
-            1
-        </div>
-        <div class="bitem">
-            天津
-        </div>
-        <div class="bitem" style="width: 120px;">
-            <a href='/Company/RecruitmentUpdate?postId=100002'>修改</a>&nbsp;&nbsp;
-            <a href='DeleteRecruitment?postId=100002' onclick='if(confirm("确定要删除吗?")==false) return false;'>删除</a>&nbsp;&nbsp;
-        </div>
+        @if (ViewBag.recruitmentList != null && ViewBag.recruitmentList.Count != 0)
+        {
+            foreach (var item in ViewBag.recruitmentList)
+            {
+                <div class="bitem">
+                    @item.PostName
+                </div>
+                <div class="bitem">
+                    @item.PostType
+                </div>
+                <div class="bitem">
+                    @item.Experience
+                </div>
+                <div class="bitem">
+                    @item.EduBackground
+                </div>
+                <div class="bitem">
+                    @item.RequireCount
+                </div>
+                <div class="bitem">
+                    @item.PostPlace
+                </div>
+                <div class="bitem" style="width: 120px;">
+                    <a href='/Company/RecruitmentUpdate?postId=@item.PostId'>修改</a>&nbsp;&nbsp;
+                    <a href='/Company/DeleteRecruitment?postId=@item.PostId' onclick='if(confirm("确定要删除吗?")==false) return false;'>删除</a>&nbsp;&nbsp;
+                </div>
+                
+
+            }
+        }
+
+
+      
 
     </div>
 </div>

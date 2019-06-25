@@ -57,5 +57,15 @@ namespace BLL
         {
             return recruitments.GetAllRecruitment();
         }
+
+        ///<summary>
+        ///根据ID查询招聘信息
+        ///<summary>
+
+        public Recruitment GetRecruitmentById(int postid)
+        {
+            return recruitments.GetRecruitmentById(postid);
+        }
+
     }
 }

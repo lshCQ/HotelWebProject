@@ -164,6 +164,10 @@
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-1.4.1.min.js" />
+    <Content Include="Areas\WebHotelManage\Views\SysAdmin\Web.config" />
+    <Content Include="Areas\WebHotelManage\Views\News\Web.config" />
+    <Content Include="Areas\WebHotelManage\Views\Dishes\Web.config" />
+    <Content Include="Areas\WebHotelManage\Views\Company\Web.config" />
     <None Include="Scripts\jquery-1.8.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.8.2.js" />
     <Content Include="Scripts\jquery-1.8.2.min.js" />
@@ -389,6 +393,7 @@
     <Content Include="ThirdFile\My97DatePicker\skin\whyGreen\datepicker.css" />
     <Content Include="ThirdFile\My97DatePicker\skin\whyGreen\img.gif" />
     <Content Include="ThirdFile\My97DatePicker\WdatePicker.js" />
+    <Content Include="Views\Dishes\DishesBook.cshtml" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -398,14 +403,11 @@
     </Content>
     <Content Include="Views\Web.config" />
     <Content Include="Views\_ViewStart.cshtml" />
-<<<<<<< HEAD
     <Content Include="Views\News-HHX\News.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\News-HHX\NewsList.cshtml" />
     <Content Include="Views\Dishes-HHX\DishesBook.cshtml" />
-=======
     <Content Include="Views\Shared\_Layout.cshtml" />
->>>>>>> e3b9c5fa484e06760b32279bc8415532d196e394
     <Content Include="ThirdFile\ckeditor\CHANGES.md" />
     <Content Include="ThirdFile\ckeditor\LICENSE.md" />
     <Content Include="ThirdFile\ckeditor\plugins\scayt\LICENSE.md" />
@@ -414,14 +416,9 @@
     <Content Include="ThirdFile\ckeditor\plugins\wsc\README.md" />
     <Content Include="ThirdFile\ckeditor\README.md" />
     <Content Include="ThirdFile\ckeditor\skins\moono\readme.md" />
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
     <Content Include="Views\Dishes-HHX\DishesShow.cshtml" />
-=======
     <Content Include="Areas\WebHotelManage\Views\SysAdmin\AdminLogin.cshtml" />
     <Content Include="Areas\WebHotelManage\Views\SysAdmin\AdminMain.cshtml" />
->>>>>>> 81328dd4829aef898d9f60665ca4b87c5d9c857d
     <Content Include="Areas\WebHotelManage\Views\Dishes\DishesManager.cshtml" />
     <Content Include="Areas\WebHotelManage\Views\Dishes\DishesPublish.cshtml" />
     <Content Include="Areas\WebHotelManage\Views\Dishes\DishesUpdate.cshtml" />
@@ -434,30 +431,16 @@
     <Content Include="Areas\WebHotelManage\Views\Company\RecruitmentUpdate.cshtml" />
     <Content Include="Areas\WebHotelManage\Views\Company\SuggestionManager.cshtml" />
     <Content Include="Views\Company\ComDesc.cshtml" />
-    <Content Include="Views\Company\Index.cshtml" />
     <Content Include="Views\Company\AboutUs.cshtml" />
     <Content Include="Views\Company\Environment.cshtml" />
     <Content Include="Views\Company\JoinUs.cshtml" />
     <Content Include="Views\Company\RecruitmentDetail.cshtml" />
     <Content Include="Views\Company\RecruitmentList.cshtml" />
     <Content Include="Views\Company\Suggestions.cshtml" />
-    <Content Include="Views\Dishes\DishesBook.cshtml" />
     <Content Include="Views\Dishes\DishesShow.cshtml" />
-    <Content Include="Views\News\News.cshtml" />
     <Content Include="Views\News\NewsList.cshtml" />
-<<<<<<< HEAD
-    <Content Include="Views\Dishes\DishesManager.cshtml" />
-    <Content Include="Views\Dishes\DishesPublish.cshtml" />
-    <Content Include="Views\Dishes\DishesUpdate.cshtml" />
-    <Content Include="Views\News\NewsPublish.cshtml" />
-    <Content Include="Views\News\NewsManager.cshtml" />
-    <Content Include="Views\News\NewsUpdate.cshtml" />
     <Content Include="Views\Company\ComDesc.cshtml" />
-    <Content Include="Views\Company\Index.cshtml" />
     <Content Include="Views\Shared\_LayoutManage.cshtml" />
-=======
-=======
->>>>>>> e3b9c5fa484e06760b32279bc8415532d196e394
     <Content Include="Views\Company-HHX\ComDesc.cshtml" />
     <Content Include="Views\Company-HHX\Environment.cshtml" />
     <Content Include="Views\Company-HHX\JoinUs.cshtml" />
@@ -465,8 +448,6 @@
     <Content Include="Views\Company-HHX\RecruitmentList.cshtml" />
     <Content Include="Views\Company-HHX\AboutUs.cshtml" />
     <Content Include="Views\Company-HHX\RecruitmentDetail.cshtml" />
-    <Content Include="Views\SysAdmin\AdminLogin.cshtml" />
-    <Content Include="Views\SysAdmin\AdminMain.cshtml" />
     <Content Include="Views\Dishes-HHX\DishesManager.cshtml" />
     <Content Include="Views\Dishes-HHX\DishesPublish.cshtml" />
     <Content Include="Views\Dishes-HHX\DishesUpdate.cshtml" />
@@ -479,15 +460,10 @@
     <Content Include="Views\Company-HHX\RecruitmentUpdate.cshtml" />
     <Content Include="Views\Company-HHX\SuggestionManager.cshtml" />
     <Content Include="Views\Company\ComDesc.cshtml" />
-    <Content Include="Views\Company\Index.cshtml" />
-<<<<<<< HEAD
     <Content Include="Views\News\NewsList.cshtml" />
     <Content Include="Views\News\NewsDetail.cshtml" />
     <Content Include="Views\Dishes\DishesShow.cshtml" />
-=======
->>>>>>> a6ddb9b328909e41f6095911ee096366ba5ee457
->>>>>>> e3b9c5fa484e06760b32279bc8415532d196e394
->>>>>>> 81328dd4829aef898d9f60665ca4b87c5d9c857d
+    <Content Include="Views\Company\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

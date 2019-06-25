@@ -1,0 +1,156 @@
+﻿
+@{
+    ViewBag.Title = "菜品预定";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<link href="~/Styles/MainPage.css" rel="stylesheet" type="text/css" />
+<link href="~/Styles/MasterPage.css" rel="stylesheet" type="text/css" />
+<link href="~/Styles/Dishes.css" rel="stylesheet" type="text/css" />
+@section lefttitle{
+    <div class="lefttitle">
+        菜品分类
+    </div>
+}
+@section content1{
+    <div class="content1">
+        <div class="conitem">
+            <a href="#">招牌菜品</a>
+        </div>
+        <div class="conitem">
+            <a href="#">特色菜品</a>
+        </div>
+        <div class="conitem">
+            <a href="#">最新菜品</a>
+        </div>
+    </div>
+}
+@section righttitle{
+    <div class="righttitle">
+        您现在所在的位置:中式餐厅酒店>在线预定
+    </div>
+}
+<div class="contentDiv">
+    <div class="cdiv">
+        <form action="/" id="mainForm" method="post">
+            <div class="item">
+                <div class="itemtitle">
+                    酒店名称：
+                </div>
+                <div class="itemcontent">
+                    <select name="HotelName">
+                        <option value="天津南开店">天津南开店</option>
+                        <option value="天津和平店">天津和平店</option>
+                        <option value="北京朝阳店">北京朝阳店</option>
+                    </select>
+                    <span>&nbsp;*</span>
+                </div>
+            </div>
+            <div class="item">
+                <div class="itemtitle">
+                    您的消费时间：
+                </div>
+                <div class="itemcontent">
+                    <input class="txt" id="ConsumeTime" name="ConsumeTime" onclick="WdatePicker()" type="text" value="" />
+                    <span>&nbsp;*</span>
+                </div>
+            </div>
+            <div class="item">
+                <div class="itemtitle">
+                    您的消费人数：
+                </div>
+                <div class="itemcontent">
+                    <input class="txt" id="ConsumePersons" name="ConsumePersons" type="text" value="" />
+                    <span>&nbsp;*</span>
+                </div>
+            </div>
+            <div class="item">
+                <div class="itemtitle">
+                    选择包间类型：
+                </div>
+                <div class="itemcontent">
+                    <select name="RoomType">
+                        <option value="包间">包间</option>
+                        <option value="散座">散座</option>
+                    </select>
+                    <span>&nbsp;*</span>
+                </div>
+            </div>
+            <div class="item">
+                <div class="itemtitle">
+                    预订人姓名：
+                </div>
+                <div class="itemcontent">
+                    <input class="txt" id="CustomerName" name="CustomerName" type="text" value="" />
+                    <span>&nbsp;*</span>
+                </div>
+            </div>
+            <div class="item">
+                <div class="itemtitle">
+                    手机号码：
+                </div>
+                <div class="itemcontent">
+                    <input class="txt" id="CustomerPhone" name="CustomerPhone" type="text" value="" />
+                    <span>&nbsp;*</span>
+                </div>
+            </div>
+            <div class="item">
+                <div class="itemtitle">
+                    电子邮件：
+                </div>
+                <div class="itemcontent">
+                    <input class="txt" id="CustomerEmail" name="CustomerEmail" type="text" value=" " />
+                </div>
+            </div>
+            <div class="item">
+                <div class="itemtitle">
+                    备注事项：
+                </div>
+                <div class="itemcontent">
+                    <textarea class="txtarea" cols="20" id="Comments" name="Comments" rows="2"></textarea>
+                </div>
+            </div>
+            <div class="item">
+                <div class="itemtitle">
+                    验证码：
+                </div>
+                <div class="itemcontent">
+                    <input class="txt" id="txtValidateCode" name="txtValidateCode" type="text" value="" />
+                    <span>&nbsp;*</span>
+                </div>
+            </div>
+            <div class="item">
+                <div class="itemtitle">
+                </div>
+                <div class="itemcontent">
+                    <img alt="验证码图片" id="vCodeimg" title="看不清？点击换一个"
+                         src="/Dishes/ValidateCode" onclick="this.src=this.src+'?'" />
+                </div>
+            </div>
+            <div class="item">
+                <div class="itemtitle">
+                </div>
+                <div class="itemcontent">
+                    <input type="button" class="btncss" id="submitMsg" value="马上预定" />
+                </div>
+            </div>
+        </form>
+    </div>
+    <div id="popdiv">
+        <div id="infodiv">
+            <div id="loadingdiv">
+                <img src="~/Styles/Images/onloading.gif" />
+            </div>
+            <div class="loadinfo">
+                正在提交数据，请耐心等待......
+            </div>
+        </div>
+        <div id="errordiv" style="display: none; color: #FCD24B; float: left;">
+            服务器超时，请稍后再试！[关闭]
+        </div>
+        <div id="regsuccess" style="float: left; display: none;">
+            提交成功！&nbsp;<b>在<span id="seconds">3</span></b>&nbsp;秒后自动跳转......
+        </div>
+    </div>
+    <div id="zzc">
+    </div>
+</div>

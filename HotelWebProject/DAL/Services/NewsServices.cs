@@ -92,6 +92,7 @@ namespace DAL
             {
                 return (from n in efdb.News orderby n.PublishTime descending select n).Take(count).ToList();
             }
+
         }
 
         /// <summary>

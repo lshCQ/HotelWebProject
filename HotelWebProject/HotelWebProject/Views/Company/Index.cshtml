@@ -84,7 +84,23 @@
                     <div class="lefttitle">
                         最新新闻
                     </div>
-                    <div class="newslist">
+                    @if (ViewBag.NewsList != null && ViewBag.NewsList.Count > 0)
+                    {
+                        foreach (var item in ViewBag.NewsList)
+                        {
+                            <div class="newslist">
+                                <div class="newstitle">
+                                    <a href='/News/NewsDetail?newsId=@item.NewsId'>@item.NewsTitle</a>
+                                </div>
+                                <div class="newsdate">
+                                    @Convert.ToDateTime(item.PublishTime).ToShortDateString()
+
+                                </div>
+                            </div>
+                            
+                        }
+                    }
+                    @*<div class="newslist">
                         <div class="newstitle">
                             <a href='/News/News?newsId=1000'>迎接十一海鲜大促销 </a>
                         </div>
@@ -123,7 +139,7 @@
                         <div class="newsdate">
                             2017-09-29
                         </div>
-                    </div>
+                    </div>*@
 
                 </div>
                 <div id="rightDiv">

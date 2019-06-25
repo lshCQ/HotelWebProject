@@ -13,7 +13,7 @@ namespace HotelWebProject.Controllers
     {
        public ActionResult NewsList()
         {
-           var newlist = nb.GetNewsByCount(10);
+           var newlist = nb.GetNewsByCount(150);
              ViewBag.NewsList = newlist;
             return View();
         }
@@ -45,11 +45,18 @@ namespace HotelWebProject.Controllers
         }
         public ActionResult NewsManager()
         {
+           
+            var newslist = nb.GetNewsByCount(150);
+            ViewBag.NewsList = newslist;
+
             return View();
         }
-        public ActionResult NewsUpdate()
+        public ActionResult NewsUpdate(int newsId)
         {
-            return View();
+            var news = nb.GetNewsById(newsId);
+            ViewBag.News = news;
+
+            return View(news);
         }
         #endregion
         #endregion
@@ -64,11 +71,9 @@ namespace HotelWebProject.Controllers
         /// </summary>
         /// <returns></returns>
         [HttpPost]
-        public string GetAllNews() {
-
-            var rt=nb.GetNewsByCount(5);
-            string json = JsonConvert.SerializeObject(rt);
-            return json;
+        public ActionResult GetAllNews() {
+            var rt=nb.GetNewsByCount(150);
+            return Json(rt, JsonRequestBehavior.DenyGet);
         }
         /// <summary>
         /// 删除新闻信息
@@ -92,7 +97,7 @@ namespace HotelWebProject.Controllers
             //获取用户请求信息
             news.NewsTitle = Request["NewsTitle"];
             news.CategoryId = Convert.ToInt32(Request["CategoryId"]);
-            news.NewsContents = Request["NewsContents"];
+            news.NewsContents = GetHtmlText(Request["NewsContents"]);
             news.PublishTime = DateTime.Now;
             //反馈消息
             string message = string.Empty;
@@ -122,7 +127,42 @@ namespace HotelWebProject.Controllers
             return RedirectToAction("NewsManager", "News");
         }
 
+        public ActionResult UpdateNews()
+        {
+            News news = new News();
+            //获取用户请求信息
+            news.NewsTitle = Request["NewsTitle"];
+            news.CategoryId = Convert.ToInt32(Request["CategoryId"]);
+            news.NewsContents = GetHtmlText(Request["NewsContents"]);
+            news.PublishTime = DateTime.Now;
+            news.NewsId = Convert.ToInt32(Request["NewsId"]);
+            //反馈消息
+            string message = string.Empty;
+            if (string.IsNullOrEmpty(news.NewsTitle))
+            {
+                message = "新闻标题不能为空";
+            }
+            else if (string.IsNullOrEmpty((news.CategoryId).ToString()))
+            {
+                message = "请选择新闻类型";
+            }
+            else if (string.IsNullOrEmpty(news.NewsContents))
+            {
+                message = "新闻内容不能为空";
+            }
+            else
+            {
+                message = "ok";
+            }
+            if (message != "ok")
+            {
+                TempData["LoginMsg"] = message;
+                return RedirectToAction("NewsUpdate",new{ newsid= news.NewsId});
+            }
+            nb.ModifyNew(news);
 
+            return RedirectToAction("NewsManager", "News");
+        }
         #endregion
 
 
