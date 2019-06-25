@@ -60,7 +60,7 @@ namespace BLL
         /// </summary>
         /// <param name="dishesId"></param>
         /// <returns></returns>
-        public List<Dishes> GetAllDishes(int categoryId)
+        public List<Dishes> GetAllDishes(int categoryId=0)
         {
             return dishess.GetAllDishes(categoryId);
         }
