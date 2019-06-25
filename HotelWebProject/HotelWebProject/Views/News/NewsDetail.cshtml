@@ -1,0 +1,59 @@
+﻿@model Models.News
+@{
+    ViewBag.Title = "新闻列表";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+@section lefttitle{
+    <div class="lefttitle">
+        栏目导航
+    </div>
+}
+@section content1{
+    <div class="content1">
+        <div class="conitem">
+            <a href="#">公司介绍</a>
+        </div>
+        <div class="conitem">
+            <a href="#">企业文化</a>
+        </div>
+        <div class="conitem">
+            <a href="#">企业荣誉</a>
+        </div>
+        <div class="conitem">
+            <a href="#">企业荣誉</a>
+        </div>
+        <div class="conitem">
+            <a href="#">发展历程</a>
+        </div>
+    </div>
+}
+
+
+
+@section righttitle{
+    <div class="righttitle">
+        您现在位置:中式餐馆酒店》新闻详情
+    </div>
+}
+
+<link href="../../Styles/News.css" rel="stylesheet" />
+
+<script type="text/javascript">
+                        function changeFontSize(fontSize) {
+                            //获取要变化的对象
+                            var divContent = document.getElementById("contents");
+                            divContent.style.fontSize = fontSize;
+                        }
+</script>
+<div class="newstitle" id="am">
+    @Model.NewsTitle
+</div>
+<div class="newsdesc">
+    发布时间：  @Model.PublishTime&nbsp;&nbsp; 文字：【<a href="javascript:void(0)" onclick="changeFontSize('20px')">大</a>】【<a href="javascript:void(0)" onclick="changeFontSize('16px')">中</a>】【<a href="javascript:void(0)" onclick="changeFontSize('12px')">小</a>】
+</div>
+<div class="newscontent" id="contents" style="font-size:14px;">
+    @* 因为新闻内容可能是富文本框转过来的，可能会有些html标记在里面,所以使用html助手的raw来返回一个带有html标记的string *@
+  @Html.Raw(@Model.NewsContents)
+</div>

@@ -6,11 +6,21 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
-
+using BLL;
 namespace HotelWebProject.Controllers
 {
     public class DishesController : Controller
     {
+
+        DishesBLL db = new DishesBLL();
+        public ActionResult DishesShow()
+        {
+              ViewBag.Disheslist = db.GetAllDishes();
+
+            return View();
+        }
+
+
         #region 页面
         #region 前台页面
         /// <summary>
@@ -23,15 +33,7 @@ namespace HotelWebProject.Controllers
             return View();
         }
 
-        /// <summary>
-        /// 菜品展示
-        /// </summary>
-        /// <returns></returns>
-        // GET: Dishes
-        public ActionResult DishesShow()
-        {
-            return View();
-        }
+ 
         #endregion
         #region  后台页面
         /// <summary>

@@ -1,195 +1,76 @@
 ﻿
-<!DOCTYPE html>
-<html>
-<head>
-    <meta name="viewport" content="width=device-width" />
-    <title>新闻列表</title>
-    <title>杭州中式餐馆酒店</title>
-    <link rel="Shortcut Icon" href="~/Styles/Images/clogo.ico" />
+@{
+    ViewBag.Title = "新闻列表";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
 
+<link href="../../Styles/News.css" rel="stylesheet" />
 
-    <link href="~/Styles/MainPage.css" rel="stylesheet" type="text/css" />
-    <link href="~/Styles/MasterPage.css" rel="stylesheet" type="text/css" />
-    <link href="~/Styles/News.css" rel="stylesheet" />
-    <script language="JavaScript" type="text/javascript">
-        var NowFrame = 1;
-        var MaxFrame = 3
-        function scroll1(d1) {
-            if (Number(d1)) {
-                NowFrame = d1;                //设当前显示图片
-            }
-            for (var i = 1; i < (MaxFrame + 1) ; i++) {
-                if (NowFrame == i) {
-                    document.getElementById(NowFrame).style.display = 'block';   //当前显示图片
-                }
-                else {
-                    document.getElementById(i).style.display = 'none';
-                }
-            }
-            {
-                if (NowFrame == MaxFrame)   //设置下一个显示的图片
-                    NowFrame = 1;
-                else
-                    NowFrame++;
-            }
-            theTimer = setTimeout('scroll1()', 3000);   //设置定时器，显示下一张图片
-        }
-    </script>
-</head>
-<body onload="scroll1(1)">
-    <div id="container">
-        <div id="top">
-            <h1 class="toptxt">风味楼大酒店</h1>
-            <h1 class="Title">TEL:0571-88998899</h1>
+@section lefttitle{
+    <div class="lefttitle">
+        栏目导航
+    </div>
+}
+@section content1{
+    <div class="content1">
+        <div class="conitem">
+            <a href="#">公司介绍</a>
         </div>
-        <div id="nav">
-            <div id="navlink">
-                <ul>
-                    <li><a href="/">网站首页</a></li>
-                    <li><a href="/Company/ComDesc">公司介绍</a></li>
-                    <li><a href="/News/NewsList">新闻动态</a></li>
-                    <li><a href="/Dishes/DishesShow">美食展示</a></li>
-                    <li><a href="/Company/Environment">餐厅环境</a></li>
-                    <li><a href="/Dishes/DishesBook">在线预订</a></li>
-                    <li><a href="/Company/JoinUs">加盟连锁</a></li>
-                    <li><a href="/Company/Suggestions">投诉建议</a></li>
-                    <li><a href="/Company/RecruitmentList">招聘信息</a></li>
-                    <li><a href="/Company/AboutUs">关于我们</a></li>
-                </ul>
-            </div>
+        <div class="conitem">
+            <a href="#">企业文化</a>
         </div>
-        <div id="topflashDiv">
-            <div id="topflashbg">
-                <img src="~/Images/topflash1.jpg" id="1" alt="" style="display: none;" />
-                <img src="~/Images/topflash2.jpg" id="2" alt="" style="display: none;" />
-                <img src="~/Images/topflash3.jpg" id="3" alt="" style="display: none;" />
-
-            </div>
+        <div class="conitem">
+            <a href="#">企业荣誉</a>
         </div>
-        <div id="content">
-            <div id="leftpage">
-
-                <div class="lefttitle">
-                    栏目导航
-                </div>
-                <div class="content1">
-                    <div class="conitem">
-                        <a href="#">公司介绍</a>
-                    </div>
-                    <div class="conitem">
-                        <a href="#">企业文化</a>
-                    </div>
-                    <div class="conitem">
-                        <a href="#">企业荣誉</a>
-                    </div>
-                    <div class="conitem">
-                        <a href="#">企业荣誉</a>
-                    </div>
-                    <div class="conitem">
-                        <a href="#">发展历程</a>
-                    </div>
-                </div>
-                <div class="lefttitle">
-                    联系方式
-                </div>
-                <div class="content2">
-                    <div style="padding-left: 33px; padding-right: 0px; font: 12px/18px simsun; color: #3f3b32;">
-                        地&nbsp; 址：杭州市莫山南路888号<br />
-                        汽车南站旁<br />
-                        电&nbsp; 话：0571-98888888<br />
-                        0571-98999999<br />
-                        传&nbsp; 真：0571-98777777<br />
-                        邮&nbsp; 箱：boss@mail.com
-                    </div>
-                </div>
-            </div>
-            <div id="rightpage">
-                <div class="righttitle">
-                    您现在位置:中式餐馆酒店》新闻动态
-
-                </div>
-                <div class="contentDiv">
-                    <div id="nlistdiv">
-                        <div class="newsItem">
-                            <div class="newtitle">
-                                <a href='News?newsId=1000&#am'>
-                                    迎接十一海鲜大促销
-                                </a>
-                            </div>
-                            <div class="newsdate">
-                                2017-09-29
-                            </div>
-                        </div>
-                    </div>
-                    <div id="nlistdiv">
-                        <div class="newsItem">
-                            <div class="newtitle">
-                                <a href='News?newsId=1001&#am'>
-                                    本店正在热招加盟商
-                                </a>
-                            </div>
-                            <div class="newsdate">
-                                2017-09-29
-                            </div>
-                        </div>
-                    </div>
-                    <div id="nlistdiv">
-                        <div class="newsItem">
-                            <div class="newtitle">
-                                <a href='News?newsId=1002&#am'>
-                                    互联网的消费正在兴起
-                                </a>
-                            </div>
-                            <div class="newsdate">
-                                2017-09-29
-                            </div>
-                        </div>
-                    </div>
-                    <div id="nlistdiv">
-                        <div class="newsItem">
-                            <div class="newtitle">
-                                <a href='News?newsId=1003&#am'>
-                                    本店正在热招加盟商
-                                </a>
-                            </div>
-                            <div class="newsdate">
-                                2017-09-29
-                            </div>
-                        </div>
-                    </div>
-                    <div id="nlistdiv">
-                        <div class="newsItem">
-                            <div class="newtitle">
-                                <a href='News?newsId=1004&#am'>
-                                    互联网的消费正在兴起
-                                </a>
-                            </div>
-                            <div class="newsdate">
-                                2017-09-29
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="conitem">
+            <a href="#">企业荣誉</a>
         </div>
-        <div id="footer">
-            <div id="footercontent">
-                <ul>
-                    <li><a href="#">关于我们</a></li>
-                    <li><a href="#">联系方式</a></li>
-                    <li><a href="#">加盟连锁</a></li>
-                    <li><a href="#">投诉建议</a></li>
-                    <li><a href="#">友情链接</a></li>
-                    <li><a href="/SysAdmin/AdminLogin">管理登录</a></li>
-
-                </ul>
-            </div>
-            <div id="bq">
-                版权所有 Copyright(C)2010-2020
-            </div>
-        </div>
-        <div id="footerbottom">
+        <div class="conitem">
+            <a href="#">发展历程</a>
         </div>
     </div>
-</body>
-</html>
+}
+
+@section lefttitle1{
+    <div class="lefttitle">
+        联系方式
+    </div>
+}
+
+@section content2{
+    <div class="content2">
+        <div style="padding-left: 33px; padding-right: 0px; font: 12px/18px simsun; color: #3f3b32;">
+            地&nbsp; 址：杭州市莫山南路888号<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 汽车南站旁<br />
+            电&nbsp; 话：0571-98888888<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0571-98999999<br />
+            传&nbsp; 真：0571-98777777<br />
+            邮&nbsp; 箱：boss@mail.com
+        </div>
+    </div>
+}
+
+@section righttitle{
+    <div class="righttitle">
+        您现在位置:中式餐馆酒店》新闻动态
+    </div>
+}
+
+@if (ViewBag.NewsList != null && ViewBag.NewsList.Count > 0)
+{
+    foreach (var item in ViewBag.NewsList)
+    {
+        <div id="nlistdiv">
+            <div class="newsItem">
+                <div class="newtitle">
+                    <a href='NewsDetail?newsId=@item.NewsId&#am'>
+                        @item.NewsTitle
+                    </a>
+                </div>
+                <div class="newsdate">
+                    @item.PublishTime
+                </div>
+            </div>
+        </div>
+    }
+}

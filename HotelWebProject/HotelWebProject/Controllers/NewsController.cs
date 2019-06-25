@@ -11,6 +11,21 @@ namespace HotelWebProject.Controllers
 {
     public class NewsController : Controller
     {
+       public ActionResult NewsList()
+        {
+           var newlist = nb.GetNewsByCount(10);
+             ViewBag.NewsList = newlist;
+            return View();
+        }
+
+        public ActionResult NewsDetail(int newsId)
+        {
+            var news = nb.GetNewsById(newsId);
+            ViewBag.News = news;
+
+            return View(news);
+        }
+
         #region 页面
         #region 前台页面
         // GET: News
@@ -18,10 +33,7 @@ namespace HotelWebProject.Controllers
         {
             return View();
         }
-        public ActionResult NewsList()
-        {
-            return View();
-        }
+       
 
         
 
