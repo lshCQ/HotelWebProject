@@ -162,7 +162,7 @@ a{  color: #FFFFFF;  text-decoration: none;  }
 /*管理员登录*/
 #loginimg{width:420px;height:300px;float:left;margin:30px  30px 30px 60px;display:inline;border-radius:8px;}
 #loginimg img{width:420px;height:300px;border-radius:8px;}
-#logindiv{width:400px;height:300px;float:right;margin:30px;display:inline;border-radius:8px;border:1px solid gray; }
+#logindiv{width:400px;height:300px;float:right;margin:30px;display:inline;border-radius:8px;border:1px solid gray;}
 #ltitle{width:400px;padding:10px 0px 10px 0px;text-align:center;font-size:26px; letter-spacing:3px;border-bottom:1px solid gray;}
 .litem{width:400px;text-align:center;margin-top:30px;font-size:14px;}
 .txt{border:1px solid #747B38;border-radius:3px;height:20px;}
@@ -172,11 +172,3 @@ a{  color: #FFFFFF;  text-decoration: none;  }
 .bookdetail{width:974px;float:left;background-color:#747B38;border:1px solid #FFFFFF;}
 .book-Time{width:230px;float:left;color:#FFFFFF;margin:10px 0px 0px 30px;display:inline;}
 .book-comment{width:900px;float:left;color:#FFFFFF;margin:10px 0px 10px 30px;display:inline;  line-height:25px;}
-#CategoryId {
-    border: 1px solid #747B38;
-    border-radius: 3px;
-    height: 25px;
-}
-#dishesImg {
-  
-}

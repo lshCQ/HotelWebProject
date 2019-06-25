@@ -145,6 +145,25 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Areas\WebHotelManage\Css\Images\back.jpg" />
+    <Content Include="Areas\WebHotelManage\Css\Images\default.png" />
+    <Content Include="Areas\WebHotelManage\Css\Images\loginimg.jpg" />
+    <Content Include="Areas\WebHotelManage\Css\Images\navbg_ht.jpg" />
+    <Content Include="Areas\WebHotelManage\Css\Images\topbg_ht.png" />
+    <Content Include="Areas\WebHotelManage\Css\ManageLayout.css" />
+    <Content Include="Areas\WebHotelManage\Views\Company\BookManager.html" />
+    <Content Include="Areas\WebHotelManage\Views\Company\RecruitmentManager.html" />
+    <Content Include="Areas\WebHotelManage\Views\Company\RecruitmentPublish.html" />
+    <Content Include="Areas\WebHotelManage\Views\Company\RecruitmentUpdate.html" />
+    <Content Include="Areas\WebHotelManage\Views\Company\SuggestionManager.html" />
+    <Content Include="Areas\WebHotelManage\Views\Dishes\DishesManager.html" />
+    <Content Include="Areas\WebHotelManage\Views\Dishes\DishesPublish.html" />
+    <Content Include="Areas\WebHotelManage\Views\Dishes\DishesUpdate.html" />
+    <Content Include="Areas\WebHotelManage\Views\News\NewsManager.html" />
+    <Content Include="Areas\WebHotelManage\Views\News\NewsPublish.html" />
+    <Content Include="Areas\WebHotelManage\Views\News\NewsUpdate.html" />
+    <Content Include="Areas\WebHotelManage\Views\SysAdmin\AdminLogin.html" />
+    <Content Include="Areas\WebHotelManage\Views\SysAdmin\AdminMain.html" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
@@ -224,12 +243,16 @@
     <Content Include="Scripts\uploadPreview.js" />
     <Content Include="Scripts\validation-min.js" />
     <Content Include="Scripts\validation.js" />
+<<<<<<< HEAD
+    <Content Include="ThirdFile\ckeditor\plugins\clipboard\dialogs\paste.js" />
+=======
     <Content Include="WebHotelManage\Css\Images\back.jpg" />
     <Content Include="WebHotelManage\Css\Images\default.png" />
     <Content Include="WebHotelManage\Css\Images\loginimg.jpg" />
     <Content Include="WebHotelManage\Css\Images\navbg_ht.jpg" />
     <Content Include="WebHotelManage\Css\Images\topbg_ht.png" />
     <Content Include="WebHotelManage\Css\ManageLayout.css" />
+>>>>>>> a6ddb9b328909e41f6095911ee096366ba5ee457
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
@@ -369,7 +392,6 @@
     <Content Include="ThirdFile\ckeditor\plugins\a11yhelp\dialogs\lang\_translationstatus.txt" />
     <Content Include="ThirdFile\ckeditor\plugins\about\dialogs\about.js" />
     <Content Include="ThirdFile\ckeditor\plugins\about\dialogs\logo_ckeditor.png" />
-    <Content Include="ThirdFile\ckeditor\plugins\clipboard\dialogs\paste.js" />
     <Content Include="ThirdFile\ckeditor\plugins\dialog\dialogDefinition.js" />
     <Content Include="ThirdFile\ckeditor\plugins\fakeobjects\images\spacer.gif" />
     <Content Include="ThirdFile\ckeditor\plugins\icons.png" />
@@ -459,12 +481,16 @@
       <DependentUpon>Web.config</DependentUpon>
     </Content>
     <Content Include="Views\Web.config" />
-    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Areas\WebHotelManage\Views\SysAdmin\Home\Index.cshtml" />
     <Content Include="Views\_ViewStart.cshtml" />
+<<<<<<< HEAD
     <Content Include="Views\News-HHX\News.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\News-HHX\NewsList.cshtml" />
     <Content Include="Views\Dishes-HHX\DishesBook.cshtml" />
+=======
+    <Content Include="Views\Shared\_Layout.cshtml" />
+>>>>>>> e3b9c5fa484e06760b32279bc8415532d196e394
     <Content Include="ThirdFile\ckeditor\CHANGES.md" />
     <Content Include="ThirdFile\ckeditor\LICENSE.md" />
     <Content Include="ThirdFile\ckeditor\plugins\scayt\LICENSE.md" />
@@ -473,7 +499,37 @@
     <Content Include="ThirdFile\ckeditor\plugins\wsc\README.md" />
     <Content Include="ThirdFile\ckeditor\README.md" />
     <Content Include="ThirdFile\ckeditor\skins\moono\readme.md" />
+<<<<<<< HEAD
     <Content Include="Views\Dishes-HHX\DishesShow.cshtml" />
+=======
+    <Content Include="Areas\WebHotelManage\Views\SysAdmin\AdminLogin.cshtml" />
+    <Content Include="Areas\WebHotelManage\Views\SysAdmin\AdminMain.cshtml" />
+    <Content Include="Areas\WebHotelManage\Views\Dishes\DishesManager.cshtml" />
+    <Content Include="Areas\WebHotelManage\Views\Dishes\DishesPublish.cshtml" />
+    <Content Include="Areas\WebHotelManage\Views\Dishes\DishesUpdate.cshtml" />
+    <Content Include="Areas\WebHotelManage\Views\News\NewsPublish.cshtml" />
+    <Content Include="Areas\WebHotelManage\Views\News\NewsManager.cshtml" />
+    <Content Include="Areas\WebHotelManage\Views\News\NewsUpdate.cshtml" />
+    <Content Include="Areas\WebHotelManage\Views\Company\BookManager.cshtml" />
+    <Content Include="Areas\WebHotelManage\Views\Company\RecruitmentManager.cshtml" />
+    <Content Include="Areas\WebHotelManage\Views\Company\RecruitmentPublish.cshtml" />
+    <Content Include="Areas\WebHotelManage\Views\Company\RecruitmentUpdate.cshtml" />
+    <Content Include="Areas\WebHotelManage\Views\Company\SuggestionManager.cshtml" />
+    <Content Include="Views\Company\ComDesc.cshtml" />
+    <Content Include="Views\Company\Index.cshtml" />
+    <Content Include="Views\Company\AboutUs.cshtml" />
+    <Content Include="Views\Company\Environment.cshtml" />
+    <Content Include="Views\Company\JoinUs.cshtml" />
+    <Content Include="Views\Company\RecruitmentDetail.cshtml" />
+    <Content Include="Views\Company\RecruitmentList.cshtml" />
+    <Content Include="Views\Company\Suggestions.cshtml" />
+    <Content Include="Views\Dishes\DishesBook.cshtml" />
+    <Content Include="Views\Dishes\DishesShow.cshtml" />
+<<<<<<< HEAD
+    <Content Include="Views\News\News.cshtml" />
+    <Content Include="Views\News\NewsList.cshtml" />
+=======
+>>>>>>> e3b9c5fa484e06760b32279bc8415532d196e394
     <Content Include="Views\Company-HHX\ComDesc.cshtml" />
     <Content Include="Views\Company-HHX\Environment.cshtml" />
     <Content Include="Views\Company-HHX\JoinUs.cshtml" />
@@ -496,9 +552,13 @@
     <Content Include="Views\Company-HHX\SuggestionManager.cshtml" />
     <Content Include="Views\Company\ComDesc.cshtml" />
     <Content Include="Views\Company\Index.cshtml" />
+<<<<<<< HEAD
     <Content Include="Views\News\NewsList.cshtml" />
     <Content Include="Views\News\NewsDetail.cshtml" />
     <Content Include="Views\Dishes\DishesShow.cshtml" />
+=======
+>>>>>>> a6ddb9b328909e41f6095911ee096366ba5ee457
+>>>>>>> e3b9c5fa484e06760b32279bc8415532d196e394
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -11,34 +11,36 @@
     <meta name="description" content="杭州好运来酒店环境舒适，服务周全，费用经济，是您出游的好去处！" />
     <link href="~/Styles/MainPage.css" rel="stylesheet" />
     <link href="~/Styles/Default.css" rel="stylesheet" />
-
     <script language="JavaScript" type="text/javascript">
-        var NowFrame = 1;
-        var MaxFrame = 3;
-        function scroll1(d1) {
-            if (Number(d1)) {
-                NowFrame = d1;                //设当前显示图片
-            }
-            for (var i = 1; i < (MaxFrame + 1); i++) {
-                if (NowFrame == i) {
-                    document.getElementById(NowFrame).style.display = 'block';   //当前显示图片
+        window.onload = function () {
+            var NowFrame = 1;
+            var MaxFrame = 3;
+            document.getElementById('scroll').onload = function () { 
+                if (Number(1)) {
+                    NowFrame = 1;                //设当前显示图片
                 }
-                else {
-                    document.getElementById(i).style.display = 'none';
+                for (var i = 1; i < (MaxFrame + 1); i++) {
+                    if (NowFrame == i) {
+                        document.getElementById(NowFrame).style.display = 'block';   //当前显示图片
+                    }
+                    else {
+                        document.getElementById(i).style.display = 'none';
+                    }
                 }
+                {
+                    if (NowFrame == MaxFrame)   //设置下一个显示的图片
+                        NowFrame = 1;
+                    else
+                        NowFrame++;
+                }
+                theTimer = setTimeout('scroll1()', 3000);   //设置定时器，显示下一张图片
             }
-            {
-                if (NowFrame == MaxFrame)   //设置下一个显示的图片
-                    NowFrame = 1;
-                else
-                    NowFrame++;
-            }
-            theTimer = setTimeout('scroll1()', 3000);   //设置定时器，显示下一张图片
         }
     </script>
+
 </head>
-<body onload="scroll1(1)">
-    <form id="form1">
+<body id="scroll">
+
         <div id="container">
             <div id="top">
                 <h1 class="toptxt">风味楼大酒店</h1>
@@ -47,7 +49,7 @@
             <div id="nav">
                 <div id="navlink">
                     <ul>
-                        <li>@Html.ActionLink("公司首页", "Index", "Company")</li>
+                        <li>@Html.ActionLink("网站首页", "Index", "Company")</li>
                         <li>@Html.ActionLink("公司介绍", "ComDesc", "Company") </li>
                         <li>@Html.ActionLink("新闻动态", "NewsList", "News") </li>
                         <li>@Html.ActionLink("美食展示", "DishesShow", "Dishes") </li>
@@ -57,16 +59,6 @@
                         <li>@Html.ActionLink("投诉建议", "Suggestions", "Company") </li>
                         <li>@Html.ActionLink("招聘信息", "RecruitmentList", "Company") </li>
                         <li>@Html.ActionLink("关于我们", "AboutUs", "Company") </li>
-                        @*<li><a href="/">网站首页</a></li>
-                            <li><a href="/Company/ComDesc">公司介绍</a></li>
-                            <li><a href="/News/NewsList">新闻动态</a></li>
-                            <li><a href="/Dishes/DishesShow">美食展示</a></li>
-                            <li><a href="/Company/Environment">餐厅环境</a></li>
-                            <li><a href="/Dishes/DishesBook">在线预订</a></li>
-                            <li><a href="/Company/JoinUs">加盟连锁</a></li>
-                            <li><a href="/Company/Suggestions">投诉建议</a></li>
-                            <li><a href="/Company/RecruitmentList">招聘信息</a></li>
-                            <li><a href="/Company/AboutUs">关于我们</a></li>*@
                     </ul>
                 </div>
             </div>
@@ -213,7 +205,7 @@
             <div id="footerbottom">
             </div>
         </div>
-    </form>
+
     <script language="JavaScript" type="text/javascript">
         show();
         var NowFrame = 1;
@@ -239,6 +231,7 @@
         }
 
     </script>
+
 </body>
 
 </html>

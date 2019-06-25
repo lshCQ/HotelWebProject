@@ -19,6 +19,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
  
+<<<<<<< HEAD
+
+=======
+>>>>>>> a6ddb9b328909e41f6095911ee096366ba5ee457
 namespace BLL
 {
     public class NewsBLL

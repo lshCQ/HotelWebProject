@@ -55,7 +55,7 @@ namespace DAL
         /// </summary>
         /// 把受理投诉改为已受理。极为修改StatusId值。0>>1
 
-        public int reciveSuggestion(int suggestionid, string statusid)
+        public int ReciveSuggestion(int suggestionid, string statusid)
         {
                 using (HotelDBEntities db = new HotelDBEntities())
                 {
