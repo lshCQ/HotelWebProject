@@ -19,7 +19,6 @@ namespace Models
         public string DishesName { get; set; }
         public Nullable<decimal> UnitPrice { get; set; }
         public Nullable<int> CategoryId { get; set; }
-    
         public virtual DishesCategory DishesCategory { get; set; }
 
         /// <summary>
@@ -28,7 +27,7 @@ namespace Models
         [NotMapped]
         public string DishesImg
         {
-            get { return DishesId.ToString() + ".png"; }
+            get { return DishesName + ".png"; }
         }
     }
 }

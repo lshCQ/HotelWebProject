@@ -171,6 +171,17 @@ namespace HotelWebProject.Controllers
             return RedirectToAction("BookManager", "Company");
         }
 
+        public ActionResult ModifyBookid()
+        {
+            int BookId = Convert.ToInt32(Request["BookId"]);
+            String statId = Request["statId"];
+            if (statId == "1")
+            {
+                statId = "0";
+                dishesbookb.ModifyBook(BookId, statId);
+            }
+            return RedirectToAction("BookManager", "Company");
+        }
 
         //添加投诉
         public ActionResult SubmitSuggestion() {

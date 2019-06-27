@@ -48,7 +48,20 @@
                     @item.ConsumeDesc
                 </div>
                 <div class="book-title" style="width: 100px;">
-                    <a href='/Company/HandleSuggestion?suggestionId=@item.SuggestionId'>受理投诉</a>
+ 
+                    @if (item.StatusId == 1)
+                    {
+                        <a href='/Company/HandleSuggestion?suggestionId=@item.SuggestionId'>
+                            已受理
+                        </a>
+                    }
+                    else
+                    {
+                        <a href='/Company/HandleSuggestion?suggestionId=@item.SuggestionId'>
+                            受理投诉
+                        </a>
+                    }
+
                 </div>
                 <div class="bookdetail">
                     <div class="book-comment">

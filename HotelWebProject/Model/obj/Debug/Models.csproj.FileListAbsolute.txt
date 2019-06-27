@@ -8,4 +8,3 @@ D:\temp文件(桌面相关)\研发部\A.工作输出\汇总\目前项目\酒店�
 D:\temp文件(桌面相关)\研发部\A.工作输出\汇总\目前项目\酒店项目\HotelWebProject\Model\obj\Debug\Models.csproj.CoreCompileInputs.cache
 D:\temp文件(桌面相关)\研发部\A.工作输出\汇总\目前项目\酒店项目\HotelWebProject\Model\obj\Debug\Models.dll
 D:\temp文件(桌面相关)\研发部\A.工作输出\汇总\目前项目\酒店项目\HotelWebProject\Model\obj\Debug\Models.pdb
-D:\temp文件(桌面相关)\研发部\A.工作输出\汇总\目前项目\酒店项目\HotelWebProject\Model\obj\Debug\Models.csprojAssemblyReference.cache

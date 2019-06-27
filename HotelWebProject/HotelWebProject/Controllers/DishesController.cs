@@ -27,7 +27,6 @@ namespace HotelWebProject.Controllers
             dishes.DishesName = Request["DishesName"];
             dishes.UnitPrice = Convert.ToInt32(Request["UnitPrice"]);
             dishes.CategoryId = Convert.ToInt32(Request["CategoryId"]);
-            //dishes.dishesImg = DateTime.dishesImg;
             //反馈消息
             string message = string.Empty;
             if (string.IsNullOrEmpty(dishes.DishesName))
@@ -62,7 +61,7 @@ namespace HotelWebProject.Controllers
             Dishes dishes = new Dishes();
             //获取用户请求信息
             dishes.DishesName = Request["DishesName"];
-            dishes.UnitPrice = Convert.ToInt32(Request["UnitPrice"]);
+            dishes.UnitPrice = Convert.ToDecimal(Request["UnitPrice"]);
             dishes.CategoryId = Convert.ToInt32(Request["CategoryId"]);
             dishes.DishesId= Convert.ToInt32(Request["DishesId"]);
             //dishes.dishesImg = DateTime.dishesImg;
@@ -80,6 +79,7 @@ namespace HotelWebProject.Controllers
             {
                 message = "菜品所属菜系不能为空";
             }
+          
             else
             {
                 message = "ok";
@@ -155,5 +155,17 @@ namespace HotelWebProject.Controllers
 
         #endregion
         #endregion
+
+
+        public bool IsDouble ( int num) {
+            var str = num.ToString();
+            if (str.Contains("."))
+            {
+                return true;
+            }
+                return false;
+            
+        }
+
     }
 }
