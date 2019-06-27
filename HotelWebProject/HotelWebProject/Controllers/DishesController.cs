@@ -105,6 +105,18 @@ namespace HotelWebProject.Controllers
             return RedirectToAction("DishesManager", "Dishes");
         }
 
+        /// <summary>
+        /// 获取菜单分类 （下拉框使用）
+        /// </summary>
+        ///
+        /// <returns></returns>
+        public ActionResult GetAllDishesCategory()
+        {
+            var rt = db.GetAllDishesCategory();
+            return Json(rt, JsonRequestBehavior.DenyGet);
+        }
+
+
 
         #region 页面
         #region 前台页面

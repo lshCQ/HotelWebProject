@@ -54,7 +54,15 @@
                         菜品名称： @item.DishesName
                     </div>
                     <div class="dishlist-txt">
-                        菜品分类：@*@item.DishesCategory*@
+                        菜品分类：
+                        @switch (item.CategoryId)
+                        {
+                            case 1:<lable>川菜</lable> break;
+                            case 2: <lable>湘菜</lable> break;
+                            case 3: <lable>鲁菜</lable> break;
+                            case 4: <lable>海鲜类</lable> break;
+                            case 5: <lable>其他</lable>break;
+                        }
                     </div>
                     <div class="dishlist-txt">
                         菜品价格：@item.UnitPrice
@@ -73,7 +81,7 @@
                     </div>
                 </div>*@
             }
-        }
+                        }
         @*<div class="dishlist-item" id="100">
             <div class="dishlist-img">
                 <img src="~/Images/dishes/100.png" alt="" />

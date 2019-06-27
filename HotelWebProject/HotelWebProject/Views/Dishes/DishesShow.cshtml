@@ -1,57 +1,56 @@
-﻿
-@{
+﻿@{
     ViewBag.Title = "菜品展示";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
 @section lefttitle{
-    <div class="lefttitle">
-        菜品分类
-    </div>
+<div class="lefttitle">
+    菜品分类
+</div>
 }
 @section content1{
-    <div class="content1">
-        <div class="conitem">
-            <a href="javascript:void(0)">招牌菜品</a>
-        </div>
-        <div class="conitem">
-            <a href="javascript:void(0)">特色菜品</a>
-        </div>
-        <div class="conitem">
-            <a href="javascript:void(0)">最新菜品</a>
-        </div>
+<div class="content1">
+    <div class="conitem">
+        <a href="javascript:void(0)">招牌菜品</a>
     </div>
+    <div class="conitem">
+        <a href="javascript:void(0)">特色菜品</a>
+    </div>
+    <div class="conitem">
+        <a href="javascript:void(0)">最新菜品</a>
+    </div>
+</div>
 }
 @section lefttitle1{
-    <div class="lefttitle">
-        菜品搜索
-    </div>
+<div class="lefttitle">
+    菜品搜索
+</div>
 }
 
 @section content2{
-    <div class="content1">
-        <form action="#" method="post" name="myform">
-            <table style="border-collapse:collapse; border:0px; padding:35px; width:200px; position:relative;left:39px;top:30px; float:left;">
-                <tr>
-                    <td>
-                        <select style="width:155px;">
-                            <option value="value"></option>
-                        </select>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <input type="text" name="txtSearch" style="width:150px;" />
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <img src="../../Images/search5.gif" />
-                    </td>
-                </tr>
-            </table>
-        </form>
-    </div>
+<div class="content1">
+    <form action="#" method="post" name="myform">
+        <table style="border-collapse:collapse; border:0px; padding:35px; width:200px; position:relative;left:39px;top:30px; float:left;">
+            <tr>
+                <td>
+                    <select style="width:155px;" id="select">
+                        <option value="value"></option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="text" name="txtSearch" style="width:150px;" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="../../Images/search5.gif" />
+                </td>
+            </tr>
+        </table>
+    </form>
+</div>
 }
 
 
@@ -60,90 +59,41 @@
 <div id="dishitem">
     @if (ViewBag.Disheslist != null && ViewBag.Disheslist.Count != 0)
     {
-        foreach (var item in ViewBag.Disheslist)
-        {
-            <div class="ditem">
-                <div class="dimgdiv">
-                    <img src="../../Images/dishes/@item.DishesImg" />
-                </div>
-                <div class="dishname">
-                    @item.DishesName&nbsp;￥@item.UnitPrice
-                </div>
-            </div>
-        }
+    foreach (var item in ViewBag.Disheslist)
+    {
+    <div class="ditem">
+        <div class="dimgdiv">
+            <img src="../../Images/dishes/@item.DishesImg" />
+        </div>
+        <div class="dishname">
+            @item.DishesName&nbsp;￥@item.UnitPrice
+        </div>
+    </div>
+    }
     }
 </div>
 @section righttitle{
-    <div class="righttitle">
-        您现在所在的位置:中式餐厅酒店>美食展示
-    </div>
+<div class="righttitle">
+    您现在所在的位置:中式餐厅酒店>美食展示
+</div>
 }
-@*<div class="contentDiv">
-    <link href="~/Styles/Dishes.css" rel="stylesheet" type="text/css" />
-    <div id="dishitem">
-        <div class="ditem">
-            <div class="dimgdiv">
-                <img src="~/Images/dishes/100.png" />
-            </div>
-            <div class="dishname">
-                水煮鱼&nbsp;￥50
-            </div>
-        </div>
-        <div class="ditem">
-            <div class="dimgdiv">
-                <img src="~/Images/dishes/101.png" />
-            </div>
-            <div class="dishname">
-                回锅肉&nbsp;￥85
-            </div>
-        </div>
-        <div class="ditem">
-            <div class="dimgdiv">
-                <img src="~/Images/dishes/102.png" />
-            </div>
-            <div class="dishname">
-                剁椒鱼头&nbsp;￥75
-            </div>
-        </div>
-        <div class="ditem">
-            <div class="dimgdiv">
-                <img src="~/Images/dishes/103.png" />
-            </div>
-            <div class="dishname">
-                红椒腊牛肉&nbsp;￥40
-            </div>
-        </div>
-        <div class="ditem">
-            <div class="dimgdiv">
-                <img src="~/Images/dishes/104.png" />
-            </div>
-            <div class="dishname">
-                糖醋鲤鱼&nbsp;￥70
-            </div>
-        </div>
-        <div class="ditem">
-            <div class="dimgdiv">
-                <img src="~/Images/dishes/105.png" />
-            </div>
-            <div class="dishname">
-                玉记扒鸡&nbsp;￥60
-            </div>
-        </div>
-        <div class="ditem">
-            <div class="dimgdiv">
-                <img src="~/Images/dishes/106.png" />
-            </div>
-            <div class="dishname">
-                汤爆双脆&nbsp;￥90
-            </div>
-        </div>
-        <div class="ditem">
-            <div class="dimgdiv">
-                <img src="~/Images/dishes/107.png" />
-            </div>
-            <div class="dishname">
-                赤贝&nbsp;￥80
-            </div>
-        </div>
-    </div>
-</div>*@
+<script src="~/Scripts/jquery-3.3.1.min.js"></script>
+<script>
+    $(function () {
+        $.ajax({
+            url: "/Dishes/GetAllDishesCategory",
+            type: "post",
+            dataType: "json",
+            success: function (data) {
+                console.log(data);
+                ///*这个方法里是ajax发送请求成功之后执行的代码*/
+                //showData(data);//我们仅做数据展示
+            },
+            error: function (msg) {
+                console.log(msg);
+                //alert("ajax连接异常：" + msg);
+            }
+        });
+
+    });
+</script>
